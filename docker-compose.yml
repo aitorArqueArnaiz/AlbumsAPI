@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  albumsapi:
+    image: ${DOCKER_REGISTRY-}albumsapi
+    build:
+      context: .
+      dockerfile: AlbumsAPI/Dockerfile
