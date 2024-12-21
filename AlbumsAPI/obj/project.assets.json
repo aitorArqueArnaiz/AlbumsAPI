@@ -33,6 +33,19 @@
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets": {}
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -95,6 +108,43 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Albums.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Albums.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Albums.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Albums.Business.dll": {}
+        }
+      },
+      "Albums.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Albums.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Albums.Domain.dll": {}
+        }
+      },
+      "Albums.Infrastucture/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Albums.Domain": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Albums.Infrastucture.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Albums.Infrastucture.dll": {}
+        }
       }
     }
   },
@@ -428,6 +478,36 @@
         "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.4.0": {
       "sha512": "eUBr4TW0up6oKDA5Xwkul289uqSMgY0xGN4pnbOIBqCcN9VKGGaPvHX3vWaG/hvocfGDP+MGzMA0bBBKz2fkmQ==",
       "type": "package",
@@ -508,10 +588,27 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Albums.Business/1.0.0": {
+      "type": "project",
+      "path": "../Albums.Business/Albums.Business.csproj",
+      "msbuildProject": "../Albums.Business/Albums.Business.csproj"
+    },
+    "Albums.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Albums.Domain/Albums.Domain.csproj",
+      "msbuildProject": "../Albums.Domain/Albums.Domain.csproj"
+    },
+    "Albums.Infrastucture/1.0.0": {
+      "type": "project",
+      "path": "../Albums.Infrastucture/Albums.Infrastucture.csproj",
+      "msbuildProject": "../Albums.Infrastucture/Albums.Infrastucture.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Albums.Business >= 1.0.0",
+      "Albums.Infrastucture >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.19.6",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -550,7 +647,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GIT\\AlbumsAPI\\Albums.Business\\Albums.Business.csproj": {
+              "projectPath": "C:\\GIT\\AlbumsAPI\\Albums.Business\\Albums.Business.csproj"
+            },
+            "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Albums.Infrastucture.csproj": {
+              "projectPath": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Albums.Infrastucture.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

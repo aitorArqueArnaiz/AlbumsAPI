@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Albums.Infrastucture.interfaces
+namespace Albums.Domain.Contracts
 {
-    public interface IAlbumsPhotosRepository
+    public interface IPhotosService
     {
     }
 }

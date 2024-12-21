@@ -1,3 +1,5 @@
+using Albums.Business.Services;
+using Albums.Domain.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumsAPI.Controllers
@@ -8,13 +10,15 @@ namespace AlbumsAPI.Controllers
     {
 
         private readonly ILogger<AlbumsController> _logger;
+        private readonly IAlbumsService _albumsService;
 
-        public AlbumsController(ILogger<AlbumsController> logger)
+        public AlbumsController(ILogger<AlbumsController> logger, IAlbumsService albumsService)
         {
             _logger = logger;
+            _albumsService = albumsService;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "GetAlbums")]
         public async Task<IActionResult> Get()
         {
             return Ok();

@@ -12,3 +12,10 @@ C:\GIT\AlbumsAPI\bin\Debug\AlbumsAPI.pdb
 C:\GIT\AlbumsAPI\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\GIT\AlbumsAPI\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\GIT\AlbumsAPI\obj\Debug\docker-c.35A3FFBA.Up2Date
+C:\GIT\AlbumsAPI\bin\Debug\Albums.Domain.dll
+C:\GIT\AlbumsAPI\bin\Debug\Albums.Domain.pdb
+C:\GIT\AlbumsAPI\bin\Debug\Albums.Business.dll
+C:\GIT\AlbumsAPI\bin\Debug\Albums.Infrastucture.dll
+C:\GIT\AlbumsAPI\bin\Debug\Newtonsoft.Json.dll
+C:\GIT\AlbumsAPI\bin\Debug\Albums.Business.pdb
+C:\GIT\AlbumsAPI\bin\Debug\Albums.Infrastucture.pdb

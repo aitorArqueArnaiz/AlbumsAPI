@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Albums.Domain.Contracts
 {
-    public interface IPhotos
+    public interface IAlbumsService
     {
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Albums.Business.Services
 {
-    public class PhotosService : IPhotos
+    public class PhotosService : IPhotosService
     {
     }
 }

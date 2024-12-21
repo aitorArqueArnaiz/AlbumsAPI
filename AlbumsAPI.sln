@@ -15,7 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albums.Infrastucture", "Alb
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{011C8D23-B0D9-44DE-86D3-17EF7BA32697}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albums.Test", "..\Albums.UnitTest\Albums.Test.csproj", "{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albums.Test", "..\Albums.UnitTest\Albums.Test.csproj", "{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{3F67364F-DEA7-4D02-8EE9-B7C6E75C8D99}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

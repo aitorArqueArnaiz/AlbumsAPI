@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 
 namespace Albums.Infrastucture.Repository
 {
-    public class AlbumsPhotosRepository : IAlbumsPhotosRepository
+    public class AlbumsRepository : IAlbumsRepository
     {
         private static string baseUrl = "https://jsonplaceholder.typicode.com/";
 
-    public async Task<Album> GetUserAsync(int userId)
+    public async Task<IEnumerable<Album>> GetAlbumsAsync()
         {
-            var userJson = await GetStringAsync(baseUrl + "users/" + userId);
+            var albumsJson = await GetStringAsync(baseUrl + "albums/");
             // Here I use Newtonsoft.Json to deserialize JSON string to User object
-            var user = JsonConvert.DeserializeObject<Album>(userJson);
-            return user;
+            var albums = JsonConvert.DeserializeObject<IEnumerable<Album>>(albumsJson);
+            return albums;
         }
 
         private static Task<string> GetStringAsync(string url)
