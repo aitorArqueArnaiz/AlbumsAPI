@@ -1,0 +1,12 @@
+C:\GIT\AlbumsAPI\Albums.Domain\bin\Debug\net8.0\Albums.Domain.deps.json
+C:\GIT\AlbumsAPI\Albums.Domain\bin\Debug\net8.0\Albums.Domain.dll
+C:\GIT\AlbumsAPI\Albums.Domain\bin\Debug\net8.0\Albums.Domain.pdb
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\Albums.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\Albums.Domain.AssemblyInfoInputs.cache
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\Albums.Domain.AssemblyInfo.cs
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\Albums.Domain.csproj.CoreCompileInputs.cache
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\Albums.Domain.sourcelink.json
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\Albums.Domain.dll
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\refint\Albums.Domain.dll
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\Albums.Domain.pdb
+C:\GIT\AlbumsAPI\Albums.Domain\obj\Debug\net8.0\ref\Albums.Domain.dll

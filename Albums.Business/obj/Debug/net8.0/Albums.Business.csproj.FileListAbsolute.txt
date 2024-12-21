@@ -1,0 +1,16 @@
+C:\GIT\AlbumsAPI\Albums.Business\bin\Debug\net8.0\Albums.Business.deps.json
+C:\GIT\AlbumsAPI\Albums.Business\bin\Debug\net8.0\Albums.Business.dll
+C:\GIT\AlbumsAPI\Albums.Business\bin\Debug\net8.0\Albums.Business.pdb
+C:\GIT\AlbumsAPI\Albums.Business\bin\Debug\net8.0\Albums.Domain.dll
+C:\GIT\AlbumsAPI\Albums.Business\bin\Debug\net8.0\Albums.Domain.pdb
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.csproj.AssemblyReference.cache
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.AssemblyInfoInputs.cache
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.AssemblyInfo.cs
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.csproj.CoreCompileInputs.cache
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.sourcelink.json
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.B.44C29B79.Up2Date
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.dll
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\refint\Albums.Business.dll
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.pdb
+C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\ref\Albums.Business.dll

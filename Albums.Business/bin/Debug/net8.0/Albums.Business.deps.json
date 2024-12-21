@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Albums.Business/1.0.0": {
+        "dependencies": {
+          "Albums.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Albums.Business.dll": {}
+        }
+      },
+      "Albums.Domain/1.0.0": {
+        "runtime": {
+          "Albums.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Albums.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Albums.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

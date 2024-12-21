@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Albums.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Albums.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Albums.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Albums.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Albums.Domain/Albums.Domain.csproj",
+      "msbuildProject": "../Albums.Domain/Albums.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Albums.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\aitor\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Albums.Domain.csproj": {
+              "projectPath": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Albums.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
