@@ -75,7 +75,8 @@
       },
       "Albums.Business/1.0.0": {
         "dependencies": {
-          "Albums.Domain": "1.0.0"
+          "Albums.Domain": "1.0.0",
+          "Albums.Infrastucture": "1.0.0"
         },
         "runtime": {
           "Albums.Business.dll": {}

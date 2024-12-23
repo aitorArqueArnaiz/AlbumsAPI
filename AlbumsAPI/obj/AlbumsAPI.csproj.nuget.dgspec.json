@@ -36,6 +36,9 @@
             "projectReferences": {
               "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Albums.Domain.csproj": {
                 "projectPath": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Albums.Domain.csproj"
+              },
+              "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Albums.Infrastucture.csproj": {
+                "projectPath": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Albums.Infrastucture.csproj"
               }
             }
           }

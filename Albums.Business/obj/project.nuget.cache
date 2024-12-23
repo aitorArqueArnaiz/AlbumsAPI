@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QF00/T/cXFj/nvve7m44VVl1Cbxh+UhQ7QZSEaNYA9Bec8LHzN1e5tj6Y1/1vLZiJpmQsgjjsvzd6ZXNe/Mddg==",
+  "dgSpecHash": "Ob3ZfCygOqlYZ88u2miChUGn+bSTMaagyLvt6mcpK5PGtY50HnMPg4lF78NRvHUtQ7hDgegWma9lFmNiq62QLw==",
   "success": true,
   "projectFilePath": "C:\\GIT\\AlbumsAPI\\Albums.Business\\Albums.Business.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aitor\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

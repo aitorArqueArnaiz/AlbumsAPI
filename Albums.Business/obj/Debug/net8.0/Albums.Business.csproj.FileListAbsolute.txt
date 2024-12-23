@@ -14,3 +14,5 @@ C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.dll
 C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\refint\Albums.Business.dll
 C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\Albums.Business.pdb
 C:\GIT\AlbumsAPI\Albums.Business\obj\Debug\net8.0\ref\Albums.Business.dll
+C:\GIT\AlbumsAPI\Albums.Business\bin\Debug\net8.0\Albums.Infrastucture.dll
+C:\GIT\AlbumsAPI\Albums.Business\bin\Debug\net8.0\Albums.Infrastucture.pdb

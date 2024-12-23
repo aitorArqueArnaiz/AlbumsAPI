@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumsAPI.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class PhotosController : Controller
     {
         private readonly ILogger<AlbumsController> _logger;

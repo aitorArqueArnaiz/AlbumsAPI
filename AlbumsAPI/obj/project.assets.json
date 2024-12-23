@@ -113,7 +113,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Albums.Domain": "1.0.0"
+          "Albums.Domain": "1.0.0",
+          "Albums.Infrastucture": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Albums.Business.dll": {}

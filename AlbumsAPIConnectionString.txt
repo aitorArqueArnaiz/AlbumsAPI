@@ -1,0 +1,1 @@
+﻿Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=AlbumPhotos;Integrated Security=true;

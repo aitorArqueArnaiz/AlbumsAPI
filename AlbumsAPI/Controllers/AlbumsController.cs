@@ -18,8 +18,8 @@ namespace AlbumsAPI.Controllers
             _albumsService = albumsService;
         }
 
-        [HttpGet(Name = "GetAlbums")]
-        public async Task<IActionResult> Get()
+        [HttpGet(Name = "SaveAlbumsAndPhotos")]
+        public async Task<IActionResult> Save()
         {
             return Ok();
         }

@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "AlbumsAPI.Controllers.AlbumsController",
+    "Method": "Save",
+    "RelativePath": "Albums",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.PhotosController",
+    "Method": "Get",
+    "RelativePath": "Photos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

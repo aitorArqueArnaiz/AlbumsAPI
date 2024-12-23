@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Albums.Domain\Albums.Domain.csproj" />
+    <ProjectReference Include="..\Albums.Infrastucture\Albums.Infrastucture.csproj" />
   </ItemGroup>
 
 </Project>
