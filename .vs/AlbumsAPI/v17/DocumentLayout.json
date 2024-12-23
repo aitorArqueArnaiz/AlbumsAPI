@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\GIT\\AlbumsAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|c:\\git\\albumsapi\\albums.domain\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|solutionrelative:albums.domain\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|c:\\git\\albumsapi\\albums.domain\\entities\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|solutionrelative:albums.domain\\entities\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F3750B5-4851-4087-895C-6CCDD67FF45D}|Albums.Business\\Albums.Business.csproj|c:\\git\\albumsapi\\albums.business\\services\\albumsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F3750B5-4851-4087-895C-6CCDD67FF45D}|Albums.Business\\Albums.Business.csproj|solutionrelative:albums.business\\services\\albumsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|c:\\git\\albumsapi\\albums.domain\\entities\\albumsphotos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|solutionrelative:albums.domain\\entities\\albumsphotos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|c:\\git\\albumsapi\\albums.infrastucture\\repository\\albumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|solutionrelative:albums.infrastucture\\repository\\albumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|c:\\git\\albumsapi\\albums.infrastucture\\repository\\photosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|solutionrelative:albums.infrastucture\\repository\\photosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|c:\\git\\albumsapi\\albumsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +39,12 @@
       "RelativeMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|solutionrelative:albumsapi\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|c:\\git\\albumsapi\\albums.infrastucture\\repository\\albumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|solutionrelative:albums.infrastucture\\repository\\albumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|c:\\git\\albumsapi\\albums.infrastucture\\interfaces\\ialbumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|solutionrelative:albums.infrastucture\\interfaces\\ialbumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|c:\\git\\albumsapi\\albums.domain\\contracts\\ialbumsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|solutionrelative:albums.domain\\contracts\\ialbumsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|c:\\git\\albumsapi\\albums.domain\\entities\\albumsphotos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|solutionrelative:albums.domain\\entities\\albumsphotos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F3750B5-4851-4087-895C-6CCDD67FF45D}|Albums.Business\\Albums.Business.csproj|c:\\git\\albumsapi\\albums.business\\services\\photosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|solutionrelative:albums.domain\\contracts\\iphotosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|c:\\git\\albumsapi\\albums.infrastucture\\repository\\photosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|solutionrelative:albums.infrastucture\\repository\\photosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|c:\\git\\albumsapi\\albums.infrastucture\\interfaces\\iphotosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|solutionrelative:albums.infrastucture\\interfaces\\iphotosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,14 +63,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}|..\\Albums.UnitTest\\Albums.Test.csproj|c:\\git\\albums.unittest\\unittests\\albumstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|c:\\git\\albumsapi\\albums.domain\\entities\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|solutionrelative:albums.domain\\entities\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|c:\\git\\albumsapi\\albums.domain\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2862FFFF-5850-46B6-A788-888B8D9A3794}|Albums.Domain\\Albums.Domain.csproj|solutionrelative:albums.domain\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -72,7 +72,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -84,59 +84,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Program.cs",
-              "RelativeDocumentMoniker": "AlbumsAPI\\Program.cs",
-              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Program.cs",
-              "RelativeToolTip": "AlbumsAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T12:11:20.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AlbumsService.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Business\\Services\\AlbumsService.cs",
               "RelativeDocumentMoniker": "Albums.Business\\Services\\AlbumsService.cs",
               "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Business\\Services\\AlbumsService.cs",
               "RelativeToolTip": "Albums.Business\\Services\\AlbumsService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA2AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T12:07:47.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlbumsController.cs",
-              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Controllers\\AlbumsController.cs",
-              "RelativeDocumentMoniker": "AlbumsAPI\\Controllers\\AlbumsController.cs",
-              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Controllers\\AlbumsController.cs",
-              "RelativeToolTip": "AlbumsAPI\\Controllers\\AlbumsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T08:36:04.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IAlbumsService.cs",
-              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Contracts\\IAlbumsService.cs",
-              "RelativeDocumentMoniker": "Albums.Domain\\Contracts\\IAlbumsService.cs",
-              "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Contracts\\IAlbumsService.cs",
-              "RelativeToolTip": "Albums.Domain\\Contracts\\IAlbumsService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:07:12.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "PhotosController.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Controllers\\PhotosController.cs",
               "RelativeDocumentMoniker": "AlbumsAPI\\Controllers\\PhotosController.cs",
@@ -149,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "IAlbumsRepository.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\interfaces\\IAlbumsRepository.cs",
               "RelativeDocumentMoniker": "Albums.Infrastucture\\interfaces\\IAlbumsRepository.cs",
@@ -175,20 +136,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "AlbumsPhotos.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\AlbumsPhotos.cs",
               "RelativeDocumentMoniker": "Albums.Domain\\Entities\\AlbumsPhotos.cs",
               "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\AlbumsPhotos.cs",
               "RelativeToolTip": "Albums.Domain\\Entities\\AlbumsPhotos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T08:22:35.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Album.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\Album.cs",
+              "RelativeDocumentMoniker": "Albums.Domain\\Entities\\Album.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\Album.cs",
+              "RelativeToolTip": "Albums.Domain\\Entities\\Album.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:46:36.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\Photo.cs",
+              "RelativeDocumentMoniker": "Albums.Domain\\Entities\\Photo.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\Photo.cs",
+              "RelativeToolTip": "Albums.Domain\\Entities\\Photo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:46:45.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PhotosRepository.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Repository\\PhotosRepository.cs",
+              "RelativeDocumentMoniker": "Albums.Infrastucture\\Repository\\PhotosRepository.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Repository\\PhotosRepository.cs",
+              "RelativeToolTip": "Albums.Infrastucture\\Repository\\PhotosRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T11:58:39.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAlbumsService.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Contracts\\IAlbumsService.cs",
+              "RelativeDocumentMoniker": "Albums.Domain\\Contracts\\IAlbumsService.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Contracts\\IAlbumsService.cs",
+              "RelativeToolTip": "Albums.Domain\\Contracts\\IAlbumsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T07:07:12.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "AlbumsController.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Controllers\\AlbumsController.cs",
+              "RelativeDocumentMoniker": "AlbumsAPI\\Controllers\\AlbumsController.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Controllers\\AlbumsController.cs",
+              "RelativeToolTip": "AlbumsAPI\\Controllers\\AlbumsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T08:36:04.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AlbumsAPI\\Program.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Program.cs",
+              "RelativeToolTip": "AlbumsAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T12:11:20.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PhotosService.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Business\\Services\\PhotosService.cs",
               "RelativeDocumentMoniker": "Albums.Business\\Services\\PhotosService.cs",
@@ -196,11 +235,12 @@
               "RelativeToolTip": "Albums.Business\\Services\\PhotosService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:08:51.715Z"
+              "WhenOpened": "2024-12-21T07:08:51.715Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "IPhotosService.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Contracts\\IPhotosService.cs",
               "RelativeDocumentMoniker": "Albums.Domain\\Contracts\\IPhotosService.cs",
@@ -208,23 +248,12 @@
               "RelativeToolTip": "Albums.Domain\\Contracts\\IPhotosService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:07:36.923Z"
+              "WhenOpened": "2024-12-21T07:07:36.923Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PhotosRepository.cs",
-              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Repository\\PhotosRepository.cs",
-              "RelativeDocumentMoniker": "Albums.Infrastucture\\Repository\\PhotosRepository.cs",
-              "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Repository\\PhotosRepository.cs",
-              "RelativeToolTip": "Albums.Infrastucture\\Repository\\PhotosRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T11:58:39.488Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "IPhotosRepository.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\interfaces\\IPhotosRepository.cs",
               "RelativeDocumentMoniker": "Albums.Infrastucture\\interfaces\\IPhotosRepository.cs",
@@ -232,35 +261,12 @@
               "RelativeToolTip": "Albums.Infrastucture\\interfaces\\IPhotosRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T11:58:11.886Z"
+              "WhenOpened": "2024-12-21T11:58:11.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Album.cs",
-              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\Album.cs",
-              "RelativeDocumentMoniker": "Albums.Domain\\Entities\\Album.cs",
-              "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\Album.cs",
-              "RelativeToolTip": "Albums.Domain\\Entities\\Album.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:46:36.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Photo.cs",
-              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\Photo.cs",
-              "RelativeDocumentMoniker": "Albums.Domain\\Entities\\Photo.cs",
-              "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Domain\\Entities\\Photo.cs",
-              "RelativeToolTip": "Albums.Domain\\Entities\\Photo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:46:45.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "AlbumsTests.cs",
               "DocumentMoniker": "C:\\GIT\\Albums.UnitTest\\UnitTests\\AlbumsTests.cs",
               "RelativeDocumentMoniker": "..\\Albums.UnitTest\\UnitTests\\AlbumsTests.cs",
@@ -268,11 +274,12 @@
               "RelativeToolTip": "..\\Albums.UnitTest\\UnitTests\\AlbumsTests.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:47:24.531Z"
+              "WhenOpened": "2024-12-21T10:47:24.531Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "PhotosTests.cs",
               "DocumentMoniker": "C:\\GIT\\Albums.UnitTest\\UnitTests\\PhotosTests.cs",
               "RelativeDocumentMoniker": "..\\Albums.UnitTest\\UnitTests\\PhotosTests.cs",
@@ -280,7 +287,8 @@
               "RelativeToolTip": "..\\Albums.UnitTest\\UnitTests\\PhotosTests.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:47:56.776Z"
+              "WhenOpened": "2024-12-21T10:47:56.776Z",
+              "EditorCaption": ""
             }
           ]
         }

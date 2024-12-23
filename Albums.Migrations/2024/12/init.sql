@@ -1,0 +1,13 @@
+CREATE TABLE albums (
+	id INT IDENTITY (1, 1) PRIMARY KEY,
+	user_id INT NOT NULL,
+	title VARCHAR (255) NOT NULL,
+);
+
+CREATE TABLE photos (
+	id INT IDENTITY (1, 1) PRIMARY KEY,
+	album_id INT NOT NULL,
+	title VARCHAR (255) NOT NULL,
+	url VARCHAR (255) NOT NULL,
+	thumbnail_url VARCHAR (255) NOT NULL,
+);
