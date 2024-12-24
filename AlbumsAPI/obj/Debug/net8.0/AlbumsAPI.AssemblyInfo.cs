@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlbumsAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01d136d68720fc16d7c29695265cca72bb4309aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d21f17203bdc855ae14e4dec13f5f85304d4a19")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlbumsAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlbumsAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

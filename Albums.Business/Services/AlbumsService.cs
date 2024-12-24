@@ -25,7 +25,7 @@ namespace Albums.Business.Services
         public async Task CreateAlbumAsync(int id, int userId, string title)
         {
             string createSqlQuery = @$"INSERT INTO dbo.albums (id, user_id, title)
-                                    VALUES ({id}, {userId}, {title});";
+                                    VALUES ({id}, {userId}, '{title}');";
             await _albumsDbRepository.AddAsync(createSqlQuery);
         }
 
@@ -81,7 +81,7 @@ namespace Albums.Business.Services
         public async Task UpdateAlbumAsync(int id, int userId, string newTitle)
         {
             string updateSqlQuery = @$"UPDATE dbo.albums
-                            SET user_id = {userId}, title = {newTitle}
+                            SET user_id = {userId}, title = '{newTitle}'
                             WHERE id = {id};";
             await _albumsDbRepository.AddAsync(updateSqlQuery);
         }

@@ -21,7 +21,7 @@ namespace Albums.Business.Services
         public async Task CreatePhotoAsync(int id, int albumId, string title, string url, string thumbnailUrl)
         {
             string createSqlQuery = @$"INSERT INTO dbo.photos (id, album_id, title, url, thumbnail_url)
-                                    VALUES ({id}, {albumId}, {title}, {url}, {thumbnailUrl});";
+                                    VALUES ({id}, {albumId}, '{title}', '{url}', '{thumbnailUrl}');";
             await _photosDbReposiory.AddAsync(createSqlQuery);
         }
 
@@ -55,7 +55,7 @@ namespace Albums.Business.Services
         public async Task UpdatePhotoAsync(int id, int albumId, string newTitle, string newUrl, string newThumbnailUrl)
         {
             string updateSqlQuery = @$"UPDATE dbo.photos
-                            SET album_id = {albumId}, title = {newTitle}, url = {newUrl}, thumbnail_url = {newThumbnailUrl}
+                            SET album_id = {albumId}, title = '{newTitle}', url = '{newUrl}', thumbnail_url = '{newThumbnailUrl}'
                             WHERE id = {id};";
             await _photosDbReposiory.AddAsync(updateSqlQuery);
         }

@@ -22,6 +22,7 @@ namespace AlbumsAPI.Controllers
         }
 
         [HttpPost(Name = "SaveAlbumsAndPhotos")]
+        [EndpointName("SaveAlbumsAndPhotos")]
         public async Task<IActionResult> Save()
         {
             try
@@ -37,6 +38,7 @@ namespace AlbumsAPI.Controllers
         }
 
         [HttpGet(Name = "GetFilteredAlbums")]
+        [EndpointName("GetAlbumsFilteredByTitle")]
         public async Task<IActionResult> GetByTitleAsync(string title)
         {
             try
