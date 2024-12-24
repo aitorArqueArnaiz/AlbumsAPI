@@ -1,5 +1,6 @@
 ﻿using Albums.Domain.Contracts;
 using Albums.Domain.Entities;
+using Albums.Infrastucture.Data.Repositories;
 using Albums.Infrastucture.interfaces;
 
 namespace Albums.Business.Services
@@ -9,25 +10,32 @@ namespace Albums.Business.Services
         private readonly IPhotosRepository _photosRepository;
         private readonly IPhotosDbReposiory _photosDbReposiory;
 
-        public PhotosService(IPhotosRepository photosRepository)
+        public PhotosService(
+            IPhotosRepository photosRepository,
+            IPhotosDbReposiory photosDbReposiory)
         {
             _photosRepository = photosRepository;
+            _photosDbReposiory = photosDbReposiory;
         }
 
-        public async Task<Photo> CreatePhotoAsync(int id, int albumId, string title, string url, string thumbnailUrl)
+        public async Task CreatePhotoAsync(int id, int albumId, string title, string url, string thumbnailUrl)
         {
-            throw new NotImplementedException();
+            string createSqlQuery = @$"INSERT INTO dbo.photos (id, album_id, title, url, thumbnail_url)
+                                    VALUES ({id}, {albumId}, {title}, {url}, {thumbnailUrl});";
+            await _photosDbReposiory.AddAsync(createSqlQuery);
         }
 
         public async Task DeletePhotoAsync(int id)
         {
-            string deleteSqlQuery = @"";
+            string deleteSqlQuery = @$"DELETE FROM dbo.photos WHERE id={id};";
             await _photosDbReposiory.DeleteAsync(deleteSqlQuery);
         }
 
-        public async Task<Photo> GetPhotoByIdAsync(int id)
+        public Photo GetPhotoByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            string getSqlQuery = @$"SELECT FROM dbo.photos WHERE id={id};";
+            var photo = _photosDbReposiory.GetAsync(getSqlQuery);
+            return ConvertStringToPhoto(photo);
         }
 
         public async Task<IEnumerable<Photo>> GetPhotosFilteredByAlbumAsync(int album)
@@ -46,7 +54,15 @@ namespace Albums.Business.Services
 
         public async Task UpdatePhotoAsync(int id, int albumId, string newTitle, string newUrl, string newThumbnailUrl)
         {
-            throw new NotImplementedException();
+            string updateSqlQuery = @$"UPDATE dbo.photos
+                            SET album_id = {albumId}, title = {newTitle}, url = {newUrl}, thumbnail_url = {newThumbnailUrl}
+                            WHERE id = {id};";
+            await _photosDbReposiory.AddAsync(updateSqlQuery);
+        }
+
+        private Photo ConvertStringToPhoto(string album)
+        {
+            return new Photo();
         }
     }
 }

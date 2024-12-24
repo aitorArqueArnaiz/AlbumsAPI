@@ -24,12 +24,12 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                var album = await _albumsService.GetAlbumByIdAsync(id);
-                return Ok(album);
+                _albumsService.GetAlbumByIdAsync(id);
+                return Ok();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error ocurred during get albums {ex.Message}");
+                _logger.LogError($"Error ocurred during get album {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }
@@ -44,7 +44,7 @@ namespace AlbumsAPI.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error ocurred during get albums {ex.Message}");
+                _logger.LogError($"Error ocurred during create album {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }
@@ -59,7 +59,7 @@ namespace AlbumsAPI.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error ocurred during get albums {ex.Message}");
+                _logger.LogError($"Error ocurred during updating album {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }
@@ -74,7 +74,7 @@ namespace AlbumsAPI.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error ocurred during get albums {ex.Message}");
+                _logger.LogError($"Error ocurred during deleting album {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }

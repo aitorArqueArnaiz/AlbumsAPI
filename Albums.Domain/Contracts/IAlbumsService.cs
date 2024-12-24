@@ -10,8 +10,8 @@ namespace Albums.Domain.Contracts
     public interface IAlbumsService
     {
         Task DeleteAlbumAsync(int id);
-        Task<Album> GetAlbumByIdAsync(int id);
-        Task<Album> CreateAlbumAsync(int id, int userId, string title);
+        Album GetAlbumByIdAsync(int id);
+        Task CreateAlbumAsync(int id, int userId, string title);
         Task UpdateAlbumAsync(int id, int userId, string newTitle);
         Task SaveAlbumsAndPhotosAsync();
         Task<IEnumerable<Album>> GetAlbumsFilteredByTitleAsync(string title);

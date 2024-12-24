@@ -22,12 +22,12 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                var photo = await _photosService.GetPhotoByIdAsync(id);
+                var photo = _photosService.GetPhotoByIdAsync(id);
                 return Ok(photo);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error ocurred during get photos {ex.Message}");
+                _logger.LogError($"Error ocurred during get photo {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }
@@ -37,12 +37,12 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                var newPhoto = await _photosService.CreatePhotoAsync(id,albumId,title,url,thumbnail_url);
-                return Ok(newPhoto);
+                _photosService.CreatePhotoAsync(id,albumId,title,url,thumbnail_url);
+                return Ok();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error ocurred during get photos {ex.Message}");
+                _logger.LogError($"Error ocurred during creating new photo {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }
@@ -57,7 +57,7 @@ namespace AlbumsAPI.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error ocurred during get photos {ex.Message}");
+                _logger.LogError($"Error ocurred during updating photo {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }
@@ -72,7 +72,7 @@ namespace AlbumsAPI.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error ocurred during get photos {ex.Message}");
+                _logger.LogError($"Error ocurred during deleting photo {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }

@@ -22,20 +22,24 @@ namespace Albums.Business.Services
             _albumsDbRepository = albumsDbRepository;
         }
 
-        public async Task<Album> CreateAlbumAsync(int id, int userId, string title)
+        public async Task CreateAlbumAsync(int id, int userId, string title)
         {
-            throw new NotImplementedException();
+            string createSqlQuery = @$"INSERT INTO dbo.albums (id, user_id, title)
+                                    VALUES ({id}, {userId}, {title});";
+            await _albumsDbRepository.AddAsync(createSqlQuery);
         }
 
         public async Task DeleteAlbumAsync(int id)
         {
-            string deleteSqlQuery = @"";
+            string deleteSqlQuery = @$"DELETE FROM dbo.albums WHERE id={id};";
             await _albumsDbRepository.DeleteAsync(deleteSqlQuery);
         }
 
-        public async Task<Album> GetAlbumByIdAsync(int id)
+        public Album GetAlbumByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            string getSqlQuery = @$"SELECT FROM dbo.albums WHERE id={id};";
+            var album = _albumsDbRepository.GetAsync(getSqlQuery);
+            return ConvertStringToAlbum(album);
         }
 
         public async Task<IEnumerable<Album>> GetAlbumsFilteredByTitleAsync(string title)
@@ -76,7 +80,15 @@ namespace Albums.Business.Services
 
         public async Task UpdateAlbumAsync(int id, int userId, string newTitle)
         {
-            throw new NotImplementedException();
+            string updateSqlQuery = @$"UPDATE dbo.albums
+                            SET user_id = {userId}, title = {newTitle}
+                            WHERE id = {id};";
+            await _albumsDbRepository.AddAsync(updateSqlQuery);
+        }
+
+        private Album ConvertStringToAlbum(string album)
+        {
+            return new Album();
         }
     }
 }
