@@ -8,13 +8,19 @@ namespace Albums.Business.Services
     {
         private readonly IAlbumsRepository _albumsRepository;
         private readonly IPhotosRepository _photosRepository;
+        private readonly IAlbumsDbRepository _albumsDbRepository;
+        private readonly IPhotosDbReposiory _photosDbReposiory;
 
         public AlbumsService(
             IAlbumsRepository albumsRepository,
-            IPhotosRepository photosRepository)
+            IPhotosRepository photosRepository,
+            IAlbumsDbRepository albumsDbRepository,
+            IPhotosDbReposiory photosDbReposiory)
         {
             _albumsRepository = albumsRepository;
             _photosRepository = photosRepository;
+            _albumsDbRepository = albumsDbRepository;
+            _photosDbReposiory = photosDbReposiory;
         }
 
         public async Task<IEnumerable<Album>> GetAlbumsFilteredByTitleAsync(string title)
@@ -26,22 +32,27 @@ namespace Albums.Business.Services
 
         public async Task SaveAlbumsAndPhotosAsync()
         {
+            string sqlAlbumsInsertQuery = @"INSERT INTO dbo.albums (id, user_id, title) VALUES ";
+            string sqlPhotosInsertQuery = @"INSERT INTO dbo.photos (id, album_id, title, url, thumbnail_url) VALUES ";
+
             // Get Albums and photos information.
             var albumsResponse = await _albumsRepository.GetAlbumsAsync();
             var photosResponse  = await _photosRepository.GetPhotosAsync();
 
-            // Save information into data base.
-            string sqlAlbumsInsertQuery = @"";
+            // Save albums and photos api response information into data base.
             foreach (var album in albumsResponse)
             {
-
+                sqlAlbumsInsertQuery += $"({album.Id}, {album.UserId}, '{album.Title}'), ";
             }
+            sqlAlbumsInsertQuery = sqlAlbumsInsertQuery.Remove(sqlAlbumsInsertQuery.Length - 2, 1) + ";";
+            await _albumsDbRepository.AddAsync(sqlAlbumsInsertQuery);
 
-            string sqlPhotosInsertQuery = @"";
             foreach (var photo in photosResponse)
             {
-
+                sqlPhotosInsertQuery += $"({photo.Id}, {photo.AlbumId}, '{photo.Title}', '{photo.Url}', '{photo.ThumbnailUrl}'), ";
             }
+            sqlPhotosInsertQuery = sqlPhotosInsertQuery.Remove(sqlPhotosInsertQuery.Length - 2, 1) + ";";
+            await _albumsDbRepository.AddAsync(sqlPhotosInsertQuery);
         }
     }
 }

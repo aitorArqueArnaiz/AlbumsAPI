@@ -26,6 +26,7 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
+                await _albumsService.SaveAlbumsAndPhotosAsync();
                 return Ok();
             }
             catch (Exception ex)

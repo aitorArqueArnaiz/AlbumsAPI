@@ -11,7 +11,7 @@ namespace Albums.Infrastucture.Repository
 {
     public class PhotosRepository : IPhotosRepository
     {
-        private static string baseUrl = "https://jsonplaceholder.typicode.com/";
+        private string baseUrl = "https://jsonplaceholder.typicode.com/";
 
         public async Task<IEnumerable<Photo>> GetPhotosAsync()
         {
@@ -21,11 +21,11 @@ namespace Albums.Infrastucture.Repository
             return photos;
         }
 
-        private static Task<string> GetStringAsync(string url)
+        private async Task<string> GetStringAsync(string url)
         {
             using (var httpClient = new HttpClient())
             {
-                return httpClient.GetStringAsync(url);
+                return await httpClient.GetStringAsync(url);
             }
         }
     }

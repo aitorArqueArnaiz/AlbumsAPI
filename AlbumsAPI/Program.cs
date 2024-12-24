@@ -1,5 +1,6 @@
 using Albums.Business.Services;
 using Albums.Domain.Contracts;
+using Albums.Infrastucture.Data.Repositories;
 using Albums.Infrastucture.interfaces;
 using Albums.Infrastucture.Repository;
 using System.Text;
@@ -16,6 +17,8 @@ builder.Services.AddScoped<IAlbumsService, AlbumsService>();
 builder.Services.AddScoped<IPhotosService, PhotosService>();
 builder.Services.AddScoped<IAlbumsRepository, AlbumsRepository>();
 builder.Services.AddScoped<IPhotosRepository, PhotosRepository>();
+builder.Services.AddScoped<IPhotosDbReposiory, PhotosDbRepository>();
+builder.Services.AddScoped<IAlbumsDbRepository, AlbumsDbRepository>();
 
 // Create connection string file
 string path = Directory.GetCurrentDirectory() + "ConnectionString.txt";

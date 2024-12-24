@@ -17,7 +17,6 @@ namespace AlbumsAPI.Controllers
         }
 
         [HttpGet(Name = "GetPhotosByTitle")]
-        [Route("photos_by_title")]
         public async Task<IActionResult> GetByTitle(string title)
         {
             try
@@ -33,8 +32,7 @@ namespace AlbumsAPI.Controllers
         }
 
 
-        [HttpGet(Name = "GetPhotosByAlbumId")]
-        [Route("photos_by_album_id")]
+        [HttpOptions(Name = "GetPhotosByAlbumId")]
         public async Task<IActionResult> GetByAlbumId(int album)
         {
             try
