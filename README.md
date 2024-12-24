@@ -10,10 +10,10 @@ Run the solution with :
 
 Endpoints :
 
-	- Get all albums and photos (CRUDE)
+	- CRUD endpoints for albums and photos (Create, Read, Update and Delete)
 	- Get filtered albums (by title)
 	- Get filtered photos (by title or by album identifier)
-	- Save all albums and photos comming from API call into SQL Server data local base (mdf file also atached in this same solution).
+	- Save all albums and photos comming from API call into SQL Server data local base (mdf file also atached in this same solution, also init sql script is added in migrations layer).
 
 Improvements to be done if I would have more time :
 

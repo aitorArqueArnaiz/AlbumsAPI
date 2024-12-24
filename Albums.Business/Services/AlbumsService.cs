@@ -55,7 +55,7 @@ namespace Albums.Business.Services
             var albumsResponse = await _albumsRepository.GetAlbumsAsync();
             var photosResponse  = await _photosRepository.GetPhotosAsync();
 
-            // Save albums and photos api response information into data base.
+            // Save albums.
             foreach (var album in albumsResponse)
             {
                 sqlAlbumsInsertQuery += $"({album.Id}, {album.UserId}, '{album.Title}'), ";
@@ -63,6 +63,7 @@ namespace Albums.Business.Services
             sqlAlbumsInsertQuery = sqlAlbumsInsertQuery.Remove(sqlAlbumsInsertQuery.Length - 2, 1) + ";";
             await _albumsDbRepository.AddAsync(sqlAlbumsInsertQuery);
 
+            // Save photos.
             for (int counter = 0; counter < photosResponse.Count(); counter = counter + 1000)
             {
                 var sqlPhotosInsertQuery = @"INSERT INTO dbo.photos (id, album_id, title, url, thumbnail_url) VALUES ";
