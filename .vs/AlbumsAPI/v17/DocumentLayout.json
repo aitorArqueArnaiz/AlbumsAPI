@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\GIT\\AlbumsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}|..\\Albums.UnitTest\\Albums.Test.csproj|c:\\git\\albums.unittest\\unittests\\photostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}|..\\Albums.UnitTest\\Albums.Test.csproj|c:\\git\\albums.unittest\\unittests\\albumstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}|..\\Albums.UnitTest\\Albums.Test.csproj|c:\\git\\albums.unittest\\unittests\\albumstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}|..\\Albums.UnitTest\\Albums.Test.csproj|c:\\git\\albums.unittest\\unittests\\photostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|c:\\git\\albumsapi\\albums.infrastucture\\repository\\albumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +83,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|c:\\git\\albumsapi\\albums.infrastucture\\interfaces\\iphotosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|solutionrelative:albums.infrastucture\\interfaces\\iphotosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4C052EF-CB3F-434B-A0A6-F7A25A303575}|Albums.Migrations\\Albums.Migrations.csproj|c:\\git\\albumsapi\\albums.migrations\\2024\\12\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{D4C052EF-CB3F-434B-A0A6-F7A25A303575}|Albums.Migrations\\Albums.Migrations.csproj|solutionrelative:albums.migrations\\2024\\12\\init.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -96,7 +92,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -108,13 +104,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AlbumsTests.cs",
               "DocumentMoniker": "C:\\GIT\\Albums.UnitTest\\UnitTests\\AlbumsTests.cs",
               "RelativeDocumentMoniker": "..\\Albums.UnitTest\\UnitTests\\AlbumsTests.cs",
               "ToolTip": "C:\\GIT\\Albums.UnitTest\\UnitTests\\AlbumsTests.cs",
               "RelativeToolTip": "..\\Albums.UnitTest\\UnitTests\\AlbumsTests.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAACcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T10:47:24.531Z",
               "EditorCaption": ""
@@ -129,18 +125,17 @@
               "RelativeToolTip": "Albums.Business\\Services\\AlbumsService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T12:07:47.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:07:47.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PhotosTests.cs",
               "DocumentMoniker": "C:\\GIT\\Albums.UnitTest\\UnitTests\\PhotosTests.cs",
               "RelativeDocumentMoniker": "..\\Albums.UnitTest\\UnitTests\\PhotosTests.cs",
               "ToolTip": "C:\\GIT\\Albums.UnitTest\\UnitTests\\PhotosTests.cs",
               "RelativeToolTip": "..\\Albums.UnitTest\\UnitTests\\PhotosTests.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAcwDEAAACCAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwB4AAACCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T10:47:56.776Z",
               "EditorCaption": ""
@@ -155,8 +150,7 @@
               "RelativeToolTip": "Albums.Business\\Services\\PhotosService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:08:51.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T07:08:51.715Z"
             },
             {
               "$type": "Document",
@@ -168,8 +162,7 @@
               "RelativeToolTip": "AlbumsAPI\\Controllers\\AlbumsCrudController.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAqwBoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T10:46:08.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T10:46:08.169Z"
             },
             {
               "$type": "Document",
@@ -181,8 +174,7 @@
               "RelativeToolTip": "Albums.Infrastucture\\Data\\Repositories\\AlbumsDbRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T07:41:12.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T07:41:12.25Z"
             },
             {
               "$type": "Document",
@@ -194,8 +186,7 @@
               "RelativeToolTip": "Albums.Infrastucture\\Repository\\AlbumsRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:45:06.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T10:45:06.374Z"
             },
             {
               "$type": "Document",
@@ -207,8 +198,7 @@
               "RelativeToolTip": "AlbumsAPI\\Controllers\\AlbumsController.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAA1wCkAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T08:36:04.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T08:36:04.628Z"
             },
             {
               "$type": "Document",
@@ -220,8 +210,7 @@
               "RelativeToolTip": "Albums.Domain\\Entities\\Photo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:46:45.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T10:46:45.813Z"
             },
             {
               "$type": "Document",
@@ -233,8 +222,7 @@
               "RelativeToolTip": "AlbumsAPI\\Controllers\\PhotosCrudController.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwBgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T10:47:58.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T10:47:58.018Z"
             },
             {
               "$type": "Document",
@@ -246,8 +234,7 @@
               "RelativeToolTip": "Albums.Domain\\Contracts\\IPhotosService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:07:36.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T07:07:36.923Z"
             },
             {
               "$type": "Document",
@@ -259,8 +246,7 @@
               "RelativeToolTip": "Albums.Domain\\Contracts\\IAlbumsService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:07:12.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T07:07:12.584Z"
             },
             {
               "$type": "Document",
@@ -272,8 +258,7 @@
               "RelativeToolTip": "Albums.Domain\\Entities\\Album.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:46:36.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T10:46:36.863Z"
             },
             {
               "$type": "Document",
@@ -285,8 +270,7 @@
               "RelativeToolTip": "Albums.Infrastucture\\interfaces\\IPhotosDbReposiory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T09:14:27.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T09:14:27.045Z"
             },
             {
               "$type": "Document",
@@ -298,8 +282,7 @@
               "RelativeToolTip": "AlbumsAPI\\Controllers\\PhotosController.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwBcAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:02:56.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:02:56.222Z"
             },
             {
               "$type": "Document",
@@ -311,20 +294,18 @@
               "RelativeToolTip": "AlbumsAPI\\Program.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAMwBMAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T12:11:20.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:11:20.76Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "init.sql ",
+              "Title": "init.sql",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\Albums.Migrations\\2024\\12\\init.sql",
               "RelativeDocumentMoniker": "Albums.Migrations\\2024\\12\\init.sql",
               "ToolTip": "C:\\GIT\\AlbumsAPI\\Albums.Migrations\\2024\\12\\init.sql",
               "RelativeToolTip": "Albums.Migrations\\2024\\12\\init.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-24T10:17:33.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T10:17:33.116Z"
             },
             {
               "$type": "Document",
@@ -336,8 +317,7 @@
               "RelativeToolTip": "Albums.Infrastucture\\Repository\\PhotosRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T11:58:39.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T11:58:39.488Z"
             },
             {
               "$type": "Document",
@@ -349,8 +329,7 @@
               "RelativeToolTip": "Albums.Infrastucture\\Data\\Repositories\\PhotosDbRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAIBJwBwAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T07:43:19.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T07:43:19.962Z"
             },
             {
               "$type": "Document",
@@ -362,8 +341,7 @@
               "RelativeToolTip": "Albums.Domain\\Entities\\AlbumsPhotos.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:22:35.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T08:22:35.561Z"
             },
             {
               "$type": "Document",
@@ -375,8 +353,7 @@
               "RelativeToolTip": "Albums.Infrastucture\\interfaces\\IPhotosRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T11:58:11.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T11:58:11.886Z"
             }
           ]
         }
