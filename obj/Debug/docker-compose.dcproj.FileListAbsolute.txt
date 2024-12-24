@@ -19,3 +19,4 @@ C:\GIT\AlbumsAPI\bin\Debug\Albums.Infrastucture.dll
 C:\GIT\AlbumsAPI\bin\Debug\Newtonsoft.Json.dll
 C:\GIT\AlbumsAPI\bin\Debug\Albums.Business.pdb
 C:\GIT\AlbumsAPI\bin\Debug\Albums.Infrastucture.pdb
+C:\GIT\AlbumsAPI\bin\Debug\System.Data.SqlClient.dll

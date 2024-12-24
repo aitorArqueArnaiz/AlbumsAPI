@@ -1,5 +1,6 @@
 ﻿using Albums.Domain.Contracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
 
 namespace AlbumsAPI.Controllers
 {
@@ -23,7 +24,8 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                return Ok();
+                var album = await _albumsService.GetAlbumByIdAsync(id);
+                return Ok(album);
             }
             catch (Exception ex)
             {
@@ -37,7 +39,8 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                return Ok();
+                var newAlbum = _albumsService.CreateAlbumAsync(id, userId, title);
+                return Ok(newAlbum);
             }
             catch (Exception ex)
             {
@@ -47,10 +50,11 @@ namespace AlbumsAPI.Controllers
         }
 
         [HttpPatch(Name = "UpdateAlbumById")]
-        public async Task<IActionResult> UpdateAlbumByIdAsync(int id)
+        public async Task<IActionResult> UpdateAlbumByIdAsync(int id, int userId, string newTitle)
         {
             try
             {
+                await _albumsService.UpdateAlbumAsync(id, userId, newTitle);
                 return Ok();
             }
             catch (Exception ex)
@@ -65,6 +69,7 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
+                await _albumsService.DeleteAlbumAsync(id);
                 return Ok();
             }
             catch (Exception ex)

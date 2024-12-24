@@ -22,7 +22,8 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                return Ok();
+                var photo = await _photosService.GetPhotoByIdAsync(id);
+                return Ok(photo);
             }
             catch (Exception ex)
             {
@@ -36,7 +37,8 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                return Ok();
+                var newPhoto = await _photosService.CreatePhotoAsync(id,albumId,title,url,thumbnail_url);
+                return Ok(newPhoto);
             }
             catch (Exception ex)
             {
@@ -46,10 +48,11 @@ namespace AlbumsAPI.Controllers
         }
 
         [HttpPatch(Name = "UpdatePhotoById")]
-        public async Task<IActionResult> UpdatePhotoByIdAsync(int id)
+        public async Task<IActionResult> UpdatePhotoByIdAsync(int id, int albumId, string newTitle, string newUrl, string newThumbnailUrl)
         {
             try
             {
+                await _photosService.UpdatePhotoAsync(id, albumId, newTitle, newUrl, newThumbnailUrl);
                 return Ok();
             }
             catch (Exception ex)
@@ -64,6 +67,7 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
+                await _photosService.DeletePhotoAsync(id);
                 return Ok();
             }
             catch (Exception ex)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Albums.Migrations")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37e452aabf5a1f3d3ad8ce41e9a5ef7602c02ee9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd137955ba3998c44bce6573e50500e130227e4e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Albums.Migrations")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Albums.Migrations")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

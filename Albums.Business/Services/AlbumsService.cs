@@ -1,6 +1,8 @@
 ﻿using Albums.Domain.Contracts;
 using Albums.Domain.Entities;
+using Albums.Infrastucture.Data.Repositories;
 using Albums.Infrastucture.interfaces;
+using Albums.Infrastucture.Repository;
 
 namespace Albums.Business.Services
 {
@@ -9,18 +11,31 @@ namespace Albums.Business.Services
         private readonly IAlbumsRepository _albumsRepository;
         private readonly IPhotosRepository _photosRepository;
         private readonly IAlbumsDbRepository _albumsDbRepository;
-        private readonly IPhotosDbReposiory _photosDbReposiory;
 
         public AlbumsService(
             IAlbumsRepository albumsRepository,
             IPhotosRepository photosRepository,
-            IAlbumsDbRepository albumsDbRepository,
-            IPhotosDbReposiory photosDbReposiory)
+            IAlbumsDbRepository albumsDbRepository)
         {
             _albumsRepository = albumsRepository;
             _photosRepository = photosRepository;
             _albumsDbRepository = albumsDbRepository;
-            _photosDbReposiory = photosDbReposiory;
+        }
+
+        public async Task<Album> CreateAlbumAsync(int id, int userId, string title)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task DeleteAlbumAsync(int id)
+        {
+            string deleteSqlQuery = @"";
+            await _albumsDbRepository.DeleteAsync(deleteSqlQuery);
+        }
+
+        public async Task<Album> GetAlbumByIdAsync(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<IEnumerable<Album>> GetAlbumsFilteredByTitleAsync(string title)
@@ -57,6 +72,11 @@ namespace Albums.Business.Services
                 await _albumsDbRepository.AddAsync(sqlPhotosInsertQuery);
             }
             
+        }
+
+        public async Task UpdateAlbumAsync(int id, int userId, string newTitle)
+        {
+            throw new NotImplementedException();
         }
     }
 }
