@@ -47,12 +47,17 @@ namespace Albums.Business.Services
             sqlAlbumsInsertQuery = sqlAlbumsInsertQuery.Remove(sqlAlbumsInsertQuery.Length - 2, 1) + ";";
             await _albumsDbRepository.AddAsync(sqlAlbumsInsertQuery);
 
-            foreach (var photo in photosResponse)
+            for (int counter = 0; counter < photosResponse.Count(); counter = counter + 1000)
             {
-                sqlPhotosInsertQuery += $"({photo.Id}, {photo.AlbumId}, '{photo.Title}', '{photo.Url}', '{photo.ThumbnailUrl}'), ";
+                sqlPhotosInsertQuery = @"INSERT INTO dbo.photos (id, album_id, title, url, thumbnail_url) VALUES ";
+                foreach (var photo in photosResponse.Skip(counter).Take(1000))
+                {
+                    sqlPhotosInsertQuery += $"({photo.Id}, {photo.AlbumId}, '{photo.Title}', '{photo.Url}', '{photo.ThumbnailUrl}'), ";
+                }
+                sqlPhotosInsertQuery = sqlPhotosInsertQuery.Remove(sqlPhotosInsertQuery.Length - 2, 1) + ";";
+                await _albumsDbRepository.AddAsync(sqlPhotosInsertQuery);
             }
-            sqlPhotosInsertQuery = sqlPhotosInsertQuery.Remove(sqlPhotosInsertQuery.Length - 2, 1) + ";";
-            await _albumsDbRepository.AddAsync(sqlPhotosInsertQuery);
+            
         }
     }
 }
