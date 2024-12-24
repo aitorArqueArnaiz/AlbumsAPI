@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "s+5/t6eKqNbRz9y2cBHVzh2NK/4/n2aO/RQ8mFcJ9p4VbgPRRVsifElhRC/+MTaMf4Q2739GkqEM95ft9JMLrw==",
+  "dgSpecHash": "NMzYhwPd/4sPMx3tLnVayc2dxWv8lMSy8SypWyUUlzsFKuYN/bGplVCbuPSwvsrewsIj6VK/JDNznwLkHF4f8g==",
   "success": true,
   "projectFilePath": "C:\\GIT\\AlbumsAPI\\Albums.Infrastucture\\Albums.Infrastucture.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\aitor\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\aitor\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512"
   ],
   "logs": []
 }

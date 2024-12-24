@@ -11,21 +11,21 @@ namespace Albums.Infrastucture.Repository
 {
     public class AlbumsRepository : IAlbumsRepository
     {
-        private static string baseUrl = "https://jsonplaceholder.typicode.com/";
+        private string baseUrl = "https://jsonplaceholder.typicode.com/";
 
     public async Task<IEnumerable<Album>> GetAlbumsAsync()
         {
-            var albumsJson = await GetStringAsync(baseUrl + "albums/");
+            var albumsJson = await GetStringAsync(baseUrl + "albums");
             // Here I use Newtonsoft.Json to deserialize JSON string to User object
             var albums = JsonConvert.DeserializeObject<IEnumerable<Album>>(albumsJson);
             return albums;
         }
 
-        private static Task<string> GetStringAsync(string url)
+        private async Task<string> GetStringAsync(string url)
         {
             using (var httpClient = new HttpClient())
             {
-                return httpClient.GetStringAsync(url);
+                return await httpClient.GetStringAsync(url);
             }
         }
     }

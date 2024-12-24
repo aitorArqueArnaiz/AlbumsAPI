@@ -3,10 +3,26 @@
     "ContainingType": "AlbumsAPI.Controllers.AlbumsController",
     "Method": "Save",
     "RelativePath": "Albums",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.AlbumsController",
+    "Method": "Get",
+    "RelativePath": "Albums",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

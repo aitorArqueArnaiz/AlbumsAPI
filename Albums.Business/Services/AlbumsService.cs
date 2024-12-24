@@ -17,6 +17,12 @@ namespace Albums.Business.Services
             _photosRepository = photosRepository;
         }
 
+        public async Task<IEnumerable<Album>> GetAlbumsFilteredAsync(string title)
+        {
+            var albums = await _albumsRepository.GetAlbumsAsync();
+            return albums;
+        }
+
         public async Task SaveAlbumsAndPhotosAsync(IEnumerable<AlbumsPhotos> albumsPhotos)
         {
             // Get Albums and photos information.

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Albums.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace Albums.Domain.Contracts
 {
     public interface IPhotosService
     {
+        Task<IEnumerable<Photo>> GetPhotosFilteredAsync();
     }
 }
