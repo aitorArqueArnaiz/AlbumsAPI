@@ -8,18 +8,45 @@ namespace AlbumsAPI.Controllers
     public class PhotosController : Controller
     {
         private readonly ILogger<AlbumsController> _logger;
-        private readonly IPhotosService _albumsService;
+        private readonly IPhotosService _photosService;
 
         public PhotosController(ILogger<AlbumsController> logger, IPhotosService photosService)
         {
             _logger = logger;
-            _albumsService = photosService;
+            _photosService = photosService;
         }
 
-        [HttpGet(Name = "GetPhotos")]
-        public async Task<IActionResult> Get()
+        [HttpGet(Name = "GetPhotosByTitle")]
+        [Route("photos_by_title")]
+        public async Task<IActionResult> GetByTitle(string title)
         {
-            return Ok();
+            try
+            {
+                var response = await _photosService.GetPhotosFilteredByTitleAsync(title);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error ocurred during get photos {ex.Message}");
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        [HttpGet(Name = "GetPhotosByAlbumId")]
+        [Route("photos_by_album_id")]
+        public async Task<IActionResult> GetByAlbumId(int album)
+        {
+            try
+            {
+                var response = await _photosService.GetPhotosFilteredByAlbumAsync(album);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error ocurred during get photos {ex.Message}");
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

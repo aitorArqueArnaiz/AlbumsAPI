@@ -9,6 +9,7 @@ namespace Albums.Domain.Contracts
 {
     public interface IPhotosService
     {
-        Task<IEnumerable<Photo>> GetPhotosFilteredAsync();
+        Task<IEnumerable<Photo>> GetPhotosFilteredByTitleAsync(string title);
+        Task<IEnumerable<Photo>> GetPhotosFilteredByAlbumAsync(int album);
     }
 }

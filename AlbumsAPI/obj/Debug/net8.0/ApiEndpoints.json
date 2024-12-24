@@ -27,12 +27,66 @@
   },
   {
     "ContainingType": "AlbumsAPI.Controllers.PhotosController",
-    "Method": "Get",
+    "Method": "GetByTitle",
     "RelativePath": "Photos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.PhotosController",
+    "Method": "GetByAlbumId",
+    "RelativePath": "Photos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "album",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.PhotosController",
+    "Method": "GetByAlbumId",
+    "RelativePath": "Photos/photos_by_album_id",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "album",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.PhotosController",
+    "Method": "GetByTitle",
+    "RelativePath": "Photos/photos_by_title",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

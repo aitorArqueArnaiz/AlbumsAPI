@@ -10,6 +10,6 @@ namespace Albums.Domain.Contracts
     public interface IAlbumsService
     {
         Task SaveAlbumsAndPhotosAsync(IEnumerable<AlbumsPhotos> albumsPhotos);
-        Task<IEnumerable<Album>> GetAlbumsFilteredAsync(string title);
+        Task<IEnumerable<Album>> GetAlbumsFilteredByTitleAsync(string title);
     }
 }

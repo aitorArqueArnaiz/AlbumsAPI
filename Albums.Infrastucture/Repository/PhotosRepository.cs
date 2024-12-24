@@ -15,7 +15,7 @@ namespace Albums.Infrastucture.Repository
 
         public async Task<IEnumerable<Photo>> GetPhotosAsync()
         {
-            var photosJson = await GetStringAsync(baseUrl + "photos/");
+            var photosJson = await GetStringAsync(baseUrl + "photos");
             // Here I use Newtonsoft.Json to deserialize JSON string to User object
             var photos = JsonConvert.DeserializeObject<IEnumerable<Photo>>(photosJson);
             return photos;

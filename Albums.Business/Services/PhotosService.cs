@@ -13,10 +13,18 @@ namespace Albums.Business.Services
             _photosRepository = photosRepository;
         }
 
-        public async Task<IEnumerable<Photo>> GetPhotosFilteredAsync()
+        public async Task<IEnumerable<Photo>> GetPhotosFilteredByAlbumAsync(int album)
         {
             var photos = await _photosRepository.GetPhotosAsync();
-            return photos;
+            var photosFiltered = photos.Where(photo => photo.AlbumId == album);
+            return photosFiltered;
+        }
+
+        public async Task<IEnumerable<Photo>> GetPhotosFilteredByTitleAsync(string title)
+        {
+            var photos = await _photosRepository.GetPhotosAsync();
+            var photosFiltered = photos.Where(photo => photo.Title == title);
+            return photosFiltered;
         }
     }
 }

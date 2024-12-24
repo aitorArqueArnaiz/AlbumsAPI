@@ -40,7 +40,7 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                var response = await _albumsService.GetAlbumsFilteredAsync(title);
+                var response = await _albumsService.GetAlbumsFilteredByTitleAsync(title);
                 return Ok(response);
             }
             catch (Exception ex)
