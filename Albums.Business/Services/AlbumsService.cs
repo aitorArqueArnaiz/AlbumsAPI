@@ -24,13 +24,24 @@ namespace Albums.Business.Services
             return filteredAlbums;
         }
 
-        public async Task SaveAlbumsAndPhotosAsync(IEnumerable<AlbumsPhotos> albumsPhotos)
+        public async Task SaveAlbumsAndPhotosAsync()
         {
             // Get Albums and photos information.
-            var albums = await _albumsRepository.GetAlbumsAsync();
-            var photos  = await _photosRepository.GetPhotosAsync();
+            var albumsResponse = await _albumsRepository.GetAlbumsAsync();
+            var photosResponse  = await _photosRepository.GetPhotosAsync();
 
             // Save information into data base.
+            string sqlAlbumsInsertQuery = @"";
+            foreach (var album in albumsResponse)
+            {
+
+            }
+
+            string sqlPhotosInsertQuery = @"";
+            foreach (var photo in photosResponse)
+            {
+
+            }
         }
     }
 }

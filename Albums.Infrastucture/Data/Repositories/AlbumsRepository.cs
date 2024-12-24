@@ -45,13 +45,13 @@ namespace Albums.Infrastucture.Data.Repositories
 
         public string GetAsync(string sqlQuery)
         {
-            var result = this.ReadFromDataBAse(sqlQuery);
+            var result = this.ReadFromDataBase(sqlQuery);
             return result == null ? string.Empty : result[0];
         }
 
         public List<string> ListAsync(string sqlQuery)
         {
-            return this.ReadFromDataBAse(sqlQuery);
+            return this.ReadFromDataBase(sqlQuery);
         }
 
         public async Task UpdateAsync(string sqlQuery)
@@ -106,7 +106,7 @@ namespace Albums.Infrastucture.Data.Repositories
 
         /// <summary>This method return a single or a multiple rows from data base.</summary>
         /// <param name="sqlQuery">The sql query to be executed.</param>
-        private List<string> ReadFromDataBAse(string sqlQuery)
+        private List<string> ReadFromDataBase(string sqlQuery)
         {
             SqlConnection connection = null;
             List<string> result = new List<string>() { };

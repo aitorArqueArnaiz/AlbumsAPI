@@ -19,6 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albums.Test", "..\Albums.Un
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{3F67364F-DEA7-4D02-8EE9-B7C6E75C8D99}"
 	ProjectSection(SolutionItems) = preProject
+		AlbumPhotos.mdf = AlbumPhotos.mdf
 		README.md = README.md
 	EndProjectSection
 EndProject
