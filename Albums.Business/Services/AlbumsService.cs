@@ -32,8 +32,7 @@ namespace Albums.Business.Services
 
         public async Task SaveAlbumsAndPhotosAsync()
         {
-            string sqlAlbumsInsertQuery = @"INSERT INTO dbo.albums (id, user_id, title) VALUES ";
-            string sqlPhotosInsertQuery = @"INSERT INTO dbo.photos (id, album_id, title, url, thumbnail_url) VALUES ";
+            var sqlAlbumsInsertQuery = @"INSERT INTO dbo.albums (id, user_id, title) VALUES ";
 
             // Get Albums and photos information.
             var albumsResponse = await _albumsRepository.GetAlbumsAsync();
@@ -49,7 +48,7 @@ namespace Albums.Business.Services
 
             for (int counter = 0; counter < photosResponse.Count(); counter = counter + 1000)
             {
-                sqlPhotosInsertQuery = @"INSERT INTO dbo.photos (id, album_id, title, url, thumbnail_url) VALUES ";
+                var sqlPhotosInsertQuery = @"INSERT INTO dbo.photos (id, album_id, title, url, thumbnail_url) VALUES ";
                 foreach (var photo in photosResponse.Skip(counter).Take(1000))
                 {
                     sqlPhotosInsertQuery += $"({photo.Id}, {photo.AlbumId}, '{photo.Title}', '{photo.Url}', '{photo.ThumbnailUrl}'), ";

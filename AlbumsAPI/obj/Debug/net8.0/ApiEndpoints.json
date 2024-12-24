@@ -11,9 +11,73 @@
   },
   {
     "ContainingType": "AlbumsAPI.Controllers.AlbumsController",
-    "Method": "Get",
+    "Method": "GetByTitleAsync",
     "RelativePath": "Albums",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.AlbumsCrudeController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "AlbumsCrude",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.AlbumsCrudeController",
+    "Method": "CreateAlbumAsync",
+    "RelativePath": "AlbumsCrude",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.AlbumsCrudeController",
+    "Method": "UpdateAlbumByIdAsync",
+    "RelativePath": "AlbumsCrude",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.AlbumsCrudeController",
+    "Method": "DeleteAlbumById",
+    "RelativePath": "AlbumsCrude",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -52,6 +116,70 @@
       {
         "Name": "album",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.PhotosCrudController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "PhotosCrud",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.PhotosCrudController",
+    "Method": "CreatePhotoAsync",
+    "RelativePath": "PhotosCrud",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.PhotosCrudController",
+    "Method": "UpdatePhotoByIdAsync",
+    "RelativePath": "PhotosCrud",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlbumsAPI.Controllers.PhotosCrudController",
+    "Method": "DeletePhotoByIdAsync",
+    "RelativePath": "PhotosCrud",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

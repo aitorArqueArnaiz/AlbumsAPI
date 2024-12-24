@@ -7,7 +7,7 @@ namespace AlbumsAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AlbumsController : ControllerBase
+    public class AlbumsController : Controller
     {
 
         private readonly ILogger<AlbumsController> _logger;
@@ -37,7 +37,7 @@ namespace AlbumsAPI.Controllers
         }
 
         [HttpGet(Name = "GetFilteredAlbums")]
-        public async Task<IActionResult> Get(string title)
+        public async Task<IActionResult> GetByTitleAsync(string title)
         {
             try
             {
