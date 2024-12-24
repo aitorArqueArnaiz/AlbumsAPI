@@ -33,7 +33,7 @@ namespace Albums.Business.Services
 
         public Photo GetPhotoByIdAsync(int id)
         {
-            string getSqlQuery = @$"SELECT FROM dbo.photos WHERE id={id};";
+            string getSqlQuery = @$"SELECT * FROM dbo.photos WHERE id={id};";
             var photo = _photosDbReposiory.GetAsync(getSqlQuery);
             return ConvertStringToPhoto(photo);
         }
@@ -60,9 +60,17 @@ namespace Albums.Business.Services
             await _photosDbReposiory.AddAsync(updateSqlQuery);
         }
 
-        private Photo ConvertStringToPhoto(string album)
+        private Photo ConvertStringToPhoto(string photo)
         {
-            return new Photo();
+            var splitedPhotoCsv = photo.Split(',');
+            return new Photo()
+            {
+                Id = Int32.Parse(splitedPhotoCsv[0]),
+                Title = splitedPhotoCsv[2],
+                AlbumId = Int32.Parse(splitedPhotoCsv[1]),
+                Url = splitedPhotoCsv[3],
+                ThumbnailUrl = splitedPhotoCsv[4],
+            };
         }
     }
 }

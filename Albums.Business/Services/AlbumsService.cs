@@ -1,8 +1,6 @@
 ﻿using Albums.Domain.Contracts;
 using Albums.Domain.Entities;
-using Albums.Infrastucture.Data.Repositories;
 using Albums.Infrastucture.interfaces;
-using Albums.Infrastucture.Repository;
 
 namespace Albums.Business.Services
 {
@@ -37,7 +35,7 @@ namespace Albums.Business.Services
 
         public Album GetAlbumByIdAsync(int id)
         {
-            string getSqlQuery = @$"SELECT FROM dbo.albums WHERE id={id};";
+            string getSqlQuery = @$"SELECT * FROM dbo.albums WHERE id={id};";
             var album = _albumsDbRepository.GetAsync(getSqlQuery);
             return ConvertStringToAlbum(album);
         }
@@ -88,7 +86,12 @@ namespace Albums.Business.Services
 
         private Album ConvertStringToAlbum(string album)
         {
-            return new Album();
+            var splitedAlbumCsv = album.Split(',');
+            return new Album() {
+                Id = Int32.Parse(splitedAlbumCsv[0]),
+                UserId = Int32.Parse(splitedAlbumCsv[1]),
+                Title = splitedAlbumCsv[2]
+            };
         }
     }
 }

@@ -26,8 +26,8 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                _albumsService.GetAlbumByIdAsync(id);
-                return Ok();
+                var album = _albumsService.GetAlbumByIdAsync(id);
+                return Ok(album);
             }
             catch (Exception ex)
             {
