@@ -1,11 +1,6 @@
 ﻿using Albums.Infrastucture.interfaces;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Albums.Infrastucture.Data.Repositories
 {
@@ -18,7 +13,7 @@ namespace Albums.Infrastucture.Data.Repositories
 
         #endregion
 
-        public PhotosDbRepository() : base()
+        public PhotosDbRepository()
         {
             if (File.Exists(Directory.GetCurrentDirectory() + "ConnectionString.txt"))
             {
@@ -69,9 +64,8 @@ namespace Albums.Infrastucture.Data.Repositories
         /// <param name="record">The row reader record.</param>
         private string ReadSingleRow(IDataRecord record)
         {
-            return string.Format("{0}, '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', {8}, {9}, {10}, '{11}', '{12}', '{13}'",
-                record.GetInt32(0), record.GetString(1), record.GetString(2), record.GetString(3), record.GetString(4), record.GetString(5), record.GetString(6), record.GetString(7),
-                record.GetInt32(8), record.GetInt32(9), record.GetInt32(10), record.GetString(11), record.GetString(12), record.GetString(13));
+            return string.Format("{0}, {1}, '{2}', '{3}', '{4}'",
+                record.GetInt32(0), record.GetInt32(1), record.GetString(2), record.GetString(3), record.GetString(4));
         }
 
         /// <summary>This method executes an sql query.</summary>

@@ -10,6 +10,9 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["AlbumsAPI/AlbumsAPI.csproj", "AlbumsAPI/"]
+COPY ["Albums.Business/Albums.Business.csproj", "Albums.Business/"]
+COPY ["Albums.Domain/Albums.Domain.csproj", "Albums.Domain/"]
+COPY ["Albums.Infrastucture/Albums.Infrastucture.csproj", "Albums.Infrastucture/"]
 RUN dotnet restore "./AlbumsAPI/AlbumsAPI.csproj"
 COPY . .
 WORKDIR "/src/AlbumsAPI"

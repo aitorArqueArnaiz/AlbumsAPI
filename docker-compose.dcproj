@@ -4,7 +4,7 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>011c8d23-b0d9-44de-86d3-17ef7ba32697</ProjectGuid>
+    <ProjectGuid>3032d11a-f9cf-496e-aa7a-1e6c52b742fd</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>albumsapi</DockerServiceName>

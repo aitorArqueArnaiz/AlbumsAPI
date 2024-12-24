@@ -1,4 +1,5 @@
 ﻿using Albums.Domain.Contracts;
+using AlbumsAPI.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 
@@ -19,7 +20,8 @@ namespace AlbumsAPI.Controllers
             _logger = logger;
             _albumsService = albumsService;
         }
-        [HttpGet(Name = "GetAlbumById")]
+        [Route("get_photo_by_id")]
+        [HttpGet]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
             try
@@ -34,12 +36,13 @@ namespace AlbumsAPI.Controllers
             }
         }
 
-        [HttpPost(Name = "CreateAlbum")]
-        public async Task<IActionResult> CreateAlbumAsync(int id, int userId, string title)
+        [Route("create_new_albums")]
+        [HttpPost]
+        public async Task<IActionResult> CreateAlbumAsync(CreateAlbumRequest request)
         {
             try
             {
-                var newAlbum = _albumsService.CreateAlbumAsync(id, userId, title);
+                var newAlbum = _albumsService.CreateAlbumAsync(request.Id, request.UserId, request.Title);
                 return Ok(newAlbum);
             }
             catch (Exception ex)
@@ -49,12 +52,13 @@ namespace AlbumsAPI.Controllers
             }
         }
 
-        [HttpPatch(Name = "UpdateAlbumById")]
-        public async Task<IActionResult> UpdateAlbumByIdAsync(int id, int userId, string newTitle)
+        [Route("update_album_by_id")]
+        [HttpPatch]
+        public async Task<IActionResult> UpdateAlbumByIdAsync(UpdateAlbumRequest request)
         {
             try
             {
-                await _albumsService.UpdateAlbumAsync(id, userId, newTitle);
+                await _albumsService.UpdateAlbumAsync(request.Id, request.UserId, request.Title);
                 return Ok();
             }
             catch (Exception ex)
@@ -64,7 +68,8 @@ namespace AlbumsAPI.Controllers
             }
         }
 
-        [HttpDelete(Name = "DeleteAlbumById")]
+        [Route("delete_by_id")]
+        [HttpDelete]
         public async Task<IActionResult> DeleteAlbumById(int id)
         {
             try

@@ -1,4 +1,5 @@
 ﻿using Albums.Domain.Contracts;
+using AlbumsAPI.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlbumsAPI.Controllers
@@ -17,7 +18,8 @@ namespace AlbumsAPI.Controllers
         }
 
 
-        [HttpGet(Name = "GetPhotoById")]
+        [Route("get_by_id")]
+        [HttpGet]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
             try
@@ -32,12 +34,13 @@ namespace AlbumsAPI.Controllers
             }
         }
 
-        [HttpPost(Name = "createPhoto")]
-        public async Task<IActionResult> CreatePhotoAsync(int id, int albumId, string title, string url, string thumbnail_url)
+        [Route("create_new_photo")]
+        [HttpPost]
+        public async Task<IActionResult> CreatePhotoAsync(CreatePhotoRequest request)
         {
             try
             {
-                _photosService.CreatePhotoAsync(id,albumId,title,url,thumbnail_url);
+                await _photosService.CreatePhotoAsync(request.Id, request.AlbumId, request.Title, request.Url, request.ThumbnailUrl);
                 return Ok();
             }
             catch (Exception ex)
@@ -47,12 +50,13 @@ namespace AlbumsAPI.Controllers
             }
         }
 
-        [HttpPatch(Name = "UpdatePhotoById")]
-        public async Task<IActionResult> UpdatePhotoByIdAsync(int id, int albumId, string newTitle, string newUrl, string newThumbnailUrl)
+        [Route("update_by_id")]
+        [HttpPatch]
+        public async Task<IActionResult> UpdatePhotoByIdAsync(UpdatePhotoRequest request)
         {
             try
             {
-                await _photosService.UpdatePhotoAsync(id, albumId, newTitle, newUrl, newThumbnailUrl);
+                await _photosService.UpdatePhotoAsync(request.Id, request.AlbumId, request.Title, request.Url, request.ThumbnailUrl);
                 return Ok();
             }
             catch (Exception ex)
@@ -62,7 +66,8 @@ namespace AlbumsAPI.Controllers
             }
         }
 
-        [HttpDelete(Name = "DeletePhotoById")]
+        [Route("delete_by_id")]
+        [HttpDelete]
         public async Task<IActionResult> DeletePhotoByIdAsync(int id)
         {
             try

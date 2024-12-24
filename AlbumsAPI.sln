@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albums.Migrations", "Albums
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albums.Infrastucture", "Albums.Infrastucture\Albums.Infrastucture.csproj", "{94453BB9-23E4-4B23-ACF9-591D8CC125F8}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{011C8D23-B0D9-44DE-86D3-17EF7BA32697}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albums.Test", "..\Albums.UnitTest\Albums.Test.csproj", "{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{3F67364F-DEA7-4D02-8EE9-B7C6E75C8D99}"
@@ -23,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 		AlbumPhotos.mdf = AlbumPhotos.mdf
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3032D11A-F9CF-496E-AA7A-1E6C52B742FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,14 +50,14 @@ Global
 		{94453BB9-23E4-4B23-ACF9-591D8CC125F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94453BB9-23E4-4B23-ACF9-591D8CC125F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94453BB9-23E4-4B23-ACF9-591D8CC125F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{011C8D23-B0D9-44DE-86D3-17EF7BA32697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{011C8D23-B0D9-44DE-86D3-17EF7BA32697}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{011C8D23-B0D9-44DE-86D3-17EF7BA32697}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{011C8D23-B0D9-44DE-86D3-17EF7BA32697}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0891C6CD-D87F-4A31-B91A-30DC28B2CC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3032D11A-F9CF-496E-AA7A-1E6C52B742FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3032D11A-F9CF-496E-AA7A-1E6C52B742FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3032D11A-F9CF-496E-AA7A-1E6C52B742FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3032D11A-F9CF-496E-AA7A-1E6C52B742FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

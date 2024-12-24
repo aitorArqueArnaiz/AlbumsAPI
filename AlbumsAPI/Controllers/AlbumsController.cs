@@ -21,8 +21,8 @@ namespace AlbumsAPI.Controllers
             _albumsService = albumsService;
         }
 
-        [HttpPost(Name = "SaveAlbumsAndPhotos")]
-        [EndpointName("SaveAlbumsAndPhotos")]
+        [Route("save_albums_and_photos")]
+        [HttpGet]
         public async Task<IActionResult> Save()
         {
             try
@@ -37,8 +37,8 @@ namespace AlbumsAPI.Controllers
             }
         }
 
-        [HttpGet(Name = "GetFilteredAlbums")]
-        [EndpointName("GetAlbumsFilteredByTitle")]
+        [Route("get_album_by_title")]
+        [HttpGet]
         public async Task<IActionResult> GetByTitleAsync(string title)
         {
             try
