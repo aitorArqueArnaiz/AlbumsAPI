@@ -38,18 +38,26 @@ namespace Albums.Business.Services
             return ConvertStringToPhoto(photo);
         }
 
-        public async Task<IEnumerable<Photo>> GetPhotosFilteredByAlbumAsync(int album)
+        public async Task<IEnumerable<Photo>> GetPhotosFilteredByAlbumAsync(int? album)
         {
             var photos = await _photosRepository.GetPhotosAsync();
-            var photosFiltered = photos.Where(photo => photo.AlbumId == album);
-            return photosFiltered;
+            if(album != null)
+            {
+                var photosFiltered = photos.Where(photo => photo.AlbumId == album);
+                return photosFiltered;
+            }
+            return photos;
         }
 
         public async Task<IEnumerable<Photo>> GetPhotosFilteredByTitleAsync(string title)
         {
             var photos = await _photosRepository.GetPhotosAsync();
-            var photosFiltered = photos.Where(photo => photo.Title == title);
-            return photosFiltered;
+            if(!string.IsNullOrEmpty(title))
+            {
+                var photosFiltered = photos.Where(photo => photo.Title == title);
+                return photosFiltered;
+            }
+            return photos;
         }
 
         public async Task UpdatePhotoAsync(int id, int albumId, string newTitle, string newUrl, string newThumbnailUrl)

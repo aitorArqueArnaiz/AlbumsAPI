@@ -47,6 +47,6 @@ namespace Albums.Domain.Contracts
         /// </summary>
         /// <param name="album">album identifier.</param>
         /// <returns>photo.</returns>
-        Task<IEnumerable<Photo>> GetPhotosFilteredByAlbumAsync(int album);
+        Task<IEnumerable<Photo>> GetPhotosFilteredByAlbumAsync(int? album);
     }
 }

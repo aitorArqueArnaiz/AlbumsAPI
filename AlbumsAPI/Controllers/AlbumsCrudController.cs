@@ -42,8 +42,8 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
-                var newAlbum = _albumsService.CreateAlbumAsync(request.Id, request.UserId, request.Title);
-                return Ok(newAlbum);
+                await _albumsService.CreateAlbumAsync(request.Id, request.UserId, request.Title);
+                return Ok();
             }
             catch (Exception ex)
             {

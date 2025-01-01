@@ -40,5 +40,23 @@ namespace Albums.Test.UnitTests
             result.Should().NotBeEmpty();
             result.Should().BeEquivalentTo(new List<Album>() { new Album() { Id = 1, UserId = 123456, Title = "testTitle1" } });
         }
+
+        [Fact]
+        public async Task Test_Albums_Without_Filter()
+        {
+            // arrange
+            string testTitle = "";
+            _albumsRepositoryMock.Setup(x => x.GetAlbumsAsync()).ReturnsAsync(new List<Album>() {
+                new Album() { Id = 1, UserId = 123456, Title = "testTitle1" },
+                new Album() { Id = 2, UserId = 865436, Title = "testTitle2" }
+            });
+
+            // act
+            var result = await _albumsService.GetAlbumsFilteredByTitleAsync(testTitle);
+
+            // assert
+            result.Should().NotBeEmpty();
+            result.Should().BeEquivalentTo(new List<Album>() { new Album() { Id = 1, UserId = 123456, Title = "testTitle1" }, new Album() { Id = 2, UserId = 865436, Title = "testTitle2" } });
+        }
     }
 }

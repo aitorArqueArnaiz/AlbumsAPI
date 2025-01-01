@@ -43,8 +43,12 @@ namespace Albums.Business.Services
         public async Task<IEnumerable<Album>> GetAlbumsFilteredByTitleAsync(string title)
         {
             var albums = await _albumsRepository.GetAlbumsAsync();
-            var filteredAlbums = albums.Where(album => album.Title == title);
-            return filteredAlbums;
+            if (!string.IsNullOrEmpty(title))
+            {
+                var filteredAlbums = albums.Where(album => album.Title == title);
+                return filteredAlbums;
+            }
+            return albums;
         }
 
         public async Task SaveAlbumsAndPhotosAsync()

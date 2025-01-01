@@ -24,7 +24,7 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albums.Test", "Albums.UnitTest\Albums.Test.csproj", "{74E02A19-4F6D-4975-94BB-3B475D0EB4DF}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AlbumsFormulary", "AlbumsFormulary\AlbumsFormulary.vbproj", "{DD56C6E9-5488-4E05-B071-A5EDF9FB7E62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbumsFormulary", "AlbumsFormulary\AlbumsFormulary\AlbumsFormulary.csproj", "{DAD0B9D4-BEA8-4C76-81D3-286E92A413FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,10 +60,10 @@ Global
 		{74E02A19-4F6D-4975-94BB-3B475D0EB4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E02A19-4F6D-4975-94BB-3B475D0EB4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E02A19-4F6D-4975-94BB-3B475D0EB4DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD56C6E9-5488-4E05-B071-A5EDF9FB7E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD56C6E9-5488-4E05-B071-A5EDF9FB7E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD56C6E9-5488-4E05-B071-A5EDF9FB7E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD56C6E9-5488-4E05-B071-A5EDF9FB7E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD0B9D4-BEA8-4C76-81D3-286E92A413FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD0B9D4-BEA8-4C76-81D3-286E92A413FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD0B9D4-BEA8-4C76-81D3-286E92A413FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD0B9D4-BEA8-4C76-81D3-286E92A413FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -58,5 +58,24 @@ namespace Albums.Test.UnitTests
             result.Should().NotBeEmpty();
             result.Should().BeEquivalentTo(new List<Photo>() { new Photo() { Id = 2, AlbumId = 321, Title = "testTitle2", Url = "testUrl2", ThumbnailUrl = "thumbnailTestUrl2" } });
         }
+
+        [Fact]
+        public async Task Test_Photos_Without_Filter()
+        {
+            // arrange
+            int? testAlbum = null;
+            _photosRepositoryMock.Setup(x => x.GetPhotosAsync()).ReturnsAsync(new List<Photo>()
+            {
+                new Photo() { Id = 1, AlbumId = 123, Title = "testTitle1", Url = "testUrl1", ThumbnailUrl = "thumbnailTestUrl1" },
+                new Photo() { Id = 2, AlbumId = 321, Title = "testTitle2", Url = "testUrl2", ThumbnailUrl = "thumbnailTestUrl2" }
+            });
+
+            // act
+            var result = await _photosService.GetPhotosFilteredByAlbumAsync(testAlbum);
+
+            // assert
+            result.Should().NotBeEmpty();
+            result.Should().BeEquivalentTo(new List<Photo>() { new Photo() { Id = 1, AlbumId = 123, Title = "testTitle1", Url = "testUrl1", ThumbnailUrl = "thumbnailTestUrl1" }, new Photo() { Id = 2, AlbumId = 321, Title = "testTitle2", Url = "testUrl2", ThumbnailUrl = "thumbnailTestUrl2" } });
+        }
     }
 }
