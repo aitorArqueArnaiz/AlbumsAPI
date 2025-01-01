@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AlbumsAPI\Albums.Business\Albums.Business.csproj" />
+    <ProjectReference Include="..\Albums.Business\Albums.Business.csproj" />
   </ItemGroup>
 
   <ItemGroup>
