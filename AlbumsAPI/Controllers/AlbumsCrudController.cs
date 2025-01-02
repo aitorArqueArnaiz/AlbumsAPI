@@ -44,12 +44,12 @@ namespace AlbumsAPI.Controllers
             try
             {
                 if (request.Id == 0 || request.UserId == 0)
-                    throw new InvalidEnumArgumentException("Invalid id for an album or user id for user.");
+                    throw new ArgumentException("Invalid id for an album or user id for user.");
 
                 if (await _albumsService.ValidateAlbumUserExistsAsync(request.Id, request.UserId))
                 {
                     _logger.LogError($"Album already exist for given user.");
-                    throw new InvalidEnumArgumentException(nameof(request.UserId));
+                    throw new ArgumentException(nameof(request.UserId));
                 }
 
                 await _albumsService.CreateAlbumAsync(request.Id, request.UserId, request.Title);
@@ -69,12 +69,12 @@ namespace AlbumsAPI.Controllers
             try
             {
                 if (request.Id == 0 || request.UserId == 0)
-                    throw new InvalidEnumArgumentException("Invalid id for an album or user id for user.");
+                    throw new ArgumentException("Invalid id for an album or user id for user.");
 
                 if (!await _albumsService.ValidateAlbumUserExistsAsync(request.Id, request.UserId))
                 {
                     _logger.LogError($"Album does not exist for given user., not update was done.");
-                    throw new InvalidEnumArgumentException(nameof(request.UserId));
+                    throw new ArgumentException(nameof(request.UserId));
                 }
 
                 await _albumsService.UpdateAlbumAsync(request.Id, request.UserId, request.Title);
@@ -94,7 +94,7 @@ namespace AlbumsAPI.Controllers
             try
             {
                 if(id == 0)
-                    throw new InvalidEnumArgumentException("Invalid id for an album.");
+                    throw new ArgumentException("Invalid id for an album.");
 
                 await _albumsService.DeleteAlbumAsync(id);
                 return Ok();

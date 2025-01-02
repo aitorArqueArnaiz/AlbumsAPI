@@ -43,12 +43,12 @@ namespace AlbumsAPI.Controllers
             try
             {
                 if (request.Id == 0 || request.AlbumId == 0)
-                    throw new InvalidEnumArgumentException("Invalid id for a photo or album id for album.");
+                    throw new ArgumentException("Invalid id for a photo or album id for album.");
 
                 if (await _photosService.ValidatePhotoExistInAlbum(request.Id, request.AlbumId))
                 {
                     _logger.LogError($"Photo already exist for given album.");
-                    throw new InvalidEnumArgumentException(nameof(request.AlbumId));
+                    throw new ArgumentException(nameof(request.AlbumId));
                 }
                 await _photosService.CreatePhotoAsync(request.Id, request.AlbumId, request.Title, request.Url, request.ThumbnailUrl);
                 return Ok();
@@ -67,12 +67,12 @@ namespace AlbumsAPI.Controllers
             try
             {
                 if (request.Id == 0 || request.AlbumId == 0)
-                    throw new InvalidEnumArgumentException("Invalid id for photo or album id for album.");
+                    throw new ArgumentException("Invalid id for photo or album id for album.");
 
                 if (!await _photosService.ValidatePhotoExistInAlbum(request.Id, request.AlbumId))
                 {
                     _logger.LogError($"Photo does not exist for given album., not update was done.");
-                    throw new InvalidEnumArgumentException(nameof(request.AlbumId));
+                    throw new ArgumentException(nameof(request.AlbumId));
                 }
 
                 await _photosService.UpdatePhotoAsync(request.Id, request.AlbumId, request.Title, request.Url, request.ThumbnailUrl);
@@ -92,7 +92,7 @@ namespace AlbumsAPI.Controllers
             try
             {
                 if (id == 0)
-                    throw new InvalidEnumArgumentException("Invalid id for a photo.");
+                    throw new ArgumentException("Invalid id for a photo.");
 
                 await _photosService.DeletePhotoAsync(id);
                 return Ok();
