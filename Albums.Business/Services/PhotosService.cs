@@ -68,6 +68,15 @@ namespace Albums.Business.Services
             await _photosDbReposiory.AddAsync(updateSqlQuery);
         }
 
+        public async Task<bool> ValidatePhotoExistInAlbum(int id, int albumId)
+        {
+            var result = this.GetPhotoByIdAsync(id);
+            if (result.AlbumId == albumId)
+                return true;
+
+            return false;
+        }
+
         private Photo ConvertStringToPhoto(string photo)
         {
             var splitedPhotoCsv = photo.Split(',');

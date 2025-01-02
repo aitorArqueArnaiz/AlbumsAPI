@@ -17,6 +17,13 @@ namespace Albums.Domain.Contracts
         /// <returns></returns>
         Album GetAlbumByIdAsync(int id);
         /// <summary>
+        /// Method that checks that Album already exist for a given user.
+        /// </summary>
+        /// <param name="id">the album id.</param>
+        /// <param name="userId">the user id.</param>
+        /// <returns></returns>
+        Task<bool> ValidateAlbumUserExistsAsync(int id, int userId);
+        /// <summary>
         /// Method that creates new album.
         /// </summary>
         /// <param name="id">albun unique identifier.</param>

@@ -1,6 +1,8 @@
-﻿using Albums.Domain.Contracts;
+﻿using Albums.Business.Services;
+using Albums.Domain.Contracts;
 using AlbumsAPI.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel;
 
 namespace AlbumsAPI.Controllers
 {
@@ -40,6 +42,14 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
+                if (request.Id == 0 || request.AlbumId == 0)
+                    throw new InvalidEnumArgumentException("Invalid id for a photo or album id for album.");
+
+                if (await _photosService.ValidatePhotoExistInAlbum(request.Id, request.AlbumId))
+                {
+                    _logger.LogError($"Photo already exist for given album.");
+                    throw new InvalidEnumArgumentException(nameof(request.AlbumId));
+                }
                 await _photosService.CreatePhotoAsync(request.Id, request.AlbumId, request.Title, request.Url, request.ThumbnailUrl);
                 return Ok();
             }
@@ -56,6 +66,15 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
+                if (request.Id == 0 || request.AlbumId == 0)
+                    throw new InvalidEnumArgumentException("Invalid id for photo or album id for album.");
+
+                if (!await _photosService.ValidatePhotoExistInAlbum(request.Id, request.AlbumId))
+                {
+                    _logger.LogError($"Photo does not exist for given album., not update was done.");
+                    throw new InvalidEnumArgumentException(nameof(request.AlbumId));
+                }
+
                 await _photosService.UpdatePhotoAsync(request.Id, request.AlbumId, request.Title, request.Url, request.ThumbnailUrl);
                 return Ok();
             }
@@ -72,6 +91,9 @@ namespace AlbumsAPI.Controllers
         {
             try
             {
+                if (id == 0)
+                    throw new InvalidEnumArgumentException("Invalid id for a photo.");
+
                 await _photosService.DeletePhotoAsync(id);
                 return Ok();
             }

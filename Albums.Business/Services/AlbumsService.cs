@@ -35,7 +35,7 @@ namespace Albums.Business.Services
 
         public Album GetAlbumByIdAsync(int id)
         {
-            string getSqlQuery = @$"SELECT * FROM dbo.albums WHERE id={id};";
+            string getSqlQuery = @$"SELECT * FROM dbo.albums WHERE album_id={id};";
             var album = _albumsDbRepository.GetAsync(getSqlQuery);
             return ConvertStringToAlbum(album);
         }
@@ -87,6 +87,14 @@ namespace Albums.Business.Services
                             SET user_id = {userId}, title = '{newTitle}'
                             WHERE id = {id};";
             await _albumsDbRepository.AddAsync(updateSqlQuery);
+        }
+
+        public async Task<bool> ValidateAlbumUserExistsAsync(int id, int userId)
+        {
+            var result = this.GetAlbumByIdAsync(id);
+            if(result.UserId == userId)
+                return true;
+            return false;
         }
 
         private Album ConvertStringToAlbum(string album)

@@ -27,6 +27,13 @@ namespace Albums.Domain.Contracts
         /// <returns></returns>
         Task CreatePhotoAsync(int id, int albumId, string title, string url, string thumbnailUrl);
         /// <summary>
+        /// Mrthod that chcks that photo already assigned to album.
+        /// </summary>
+        /// <param name="id">the photo id.</param>
+        /// <param name="albumId">the album id.</param>
+        /// <returns></returns>
+        Task<bool> ValidatePhotoExistInAlbum(int id, int albumId);
+        /// <summary>
         /// Method that updates an existing photo.
         /// </summary>
         /// <param name="id">photo unique identifier.</param>
