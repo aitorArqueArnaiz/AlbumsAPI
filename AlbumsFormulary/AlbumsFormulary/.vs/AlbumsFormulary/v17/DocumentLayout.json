@@ -1,0 +1,128 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\albumsformulary\\albums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|solutionrelative:albumsformulary\\albums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|c:\\git\\albumsapi\\albumsformulary\\albumsformulary\\albumsformulary\\datastructures\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|solutionrelative:albumsformulary\\datastructures\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|c:\\git\\albumsapi\\albumsformulary\\albumsformulary\\albumsformulary\\albums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|solutionrelative:albumsformulary\\albums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\albumsformulary\\albumphotos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|solutionrelative:albumsformulary\\albumphotos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|c:\\git\\albumsapi\\albumsformulary\\albumsformulary\\albumsformulary\\albums.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|solutionrelative:albumsformulary\\albums.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|c:\\git\\albumsapi\\albumsformulary\\albumsformulary\\albumsformulary\\datastructures\\albumphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|solutionrelative:albumsformulary\\datastructures\\albumphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Album.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\DataStructures\\Album.cs",
+              "RelativeDocumentMoniker": "AlbumsFormulary\\DataStructures\\Album.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\DataStructures\\Album.cs",
+              "RelativeToolTip": "AlbumsFormulary\\DataStructures\\Album.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T12:02:14.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Albums.Designer.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\Albums.Designer.cs",
+              "RelativeDocumentMoniker": "AlbumsFormulary\\Albums.Designer.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\Albums.Designer.cs",
+              "RelativeToolTip": "AlbumsFormulary\\Albums.Designer.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAWwEcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T11:20:45.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlbumPhoto.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\DataStructures\\AlbumPhoto.cs",
+              "RelativeDocumentMoniker": "AlbumsFormulary\\DataStructures\\AlbumPhoto.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\DataStructures\\AlbumPhoto.cs",
+              "RelativeToolTip": "AlbumsFormulary\\DataStructures\\AlbumPhoto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T11:19:25.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlbumPhotos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\AlbumPhotos.cs",
+              "RelativeDocumentMoniker": "AlbumsFormulary\\AlbumPhotos.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\AlbumPhotos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AlbumsFormulary\\AlbumPhotos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T13:53:11.116Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Albums.cs",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\Albums.cs",
+              "RelativeDocumentMoniker": "AlbumsFormulary\\Albums.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\Albums.cs",
+              "RelativeToolTip": "AlbumsFormulary\\Albums.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADwvxgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T13:49:26.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Albums.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\Albums.cs",
+              "RelativeDocumentMoniker": "AlbumsFormulary\\Albums.cs",
+              "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\Albums.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AlbumsFormulary\\Albums.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T13:47:20.729Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
