@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|solutionrelative:albumsformulary\\photoscrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|c:\\git\\albumsapi\\albumsformulary\\albumsformulary\\albumsformulary\\photoscrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\albumsformulary\\photoscrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF1433B1-7E47-4806-9EEF-BD2DF5C45D59}|AlbumsFormulary\\AlbumsFormulary.csproj|solutionrelative:albumsformulary\\photoscrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -88,7 +88,7 @@
               "RelativeDocumentMoniker": "AlbumsFormulary\\PhotosCRUD.cs",
               "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\PhotosCRUD.cs",
               "RelativeToolTip": "AlbumsFormulary\\PhotosCRUD.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAqwE8AAABXAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAB0AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T09:52:17.305Z",
               "EditorCaption": ""
@@ -102,8 +102,7 @@
               "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\PhotosCRUD.cs [Dise\u00F1o]",
               "RelativeToolTip": "AlbumsFormulary\\PhotosCRUD.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T09:18:22.725Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-01-05T09:18:22.725Z"
             },
             {
               "$type": "Document",
@@ -115,8 +114,7 @@
               "RelativeToolTip": "AlbumsFormulary\\PhotosCRUD.Designer.cs",
               "ViewState": "AQIAAAEBAAAAAAAAAAAswBEBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T08:20:57.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T08:20:57.532Z"
             },
             {
               "$type": "Document",
@@ -127,8 +125,7 @@
               "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\AlbumsCRUD.cs [Dise\u00F1o]",
               "RelativeToolTip": "AlbumsFormulary\\AlbumsCRUD.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T13:53:11.116Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-01-02T13:53:11.116Z"
             },
             {
               "$type": "Document",
@@ -140,8 +137,7 @@
               "RelativeToolTip": "AlbumsFormulary\\AlbumsCRUD.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAAYwDsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T08:17:57.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T08:17:57.731Z"
             },
             {
               "$type": "Document",
@@ -152,8 +148,7 @@
               "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsFormulary\\AlbumsFormulary\\AlbumsFormulary\\Albums.cs [Dise\u00F1o]",
               "RelativeToolTip": "AlbumsFormulary\\Albums.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T13:47:20.729Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-01-02T13:47:20.729Z"
             },
             {
               "$type": "Document",
@@ -165,8 +160,7 @@
               "RelativeToolTip": "AlbumsFormulary\\DataStructures\\AlbumPhoto.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T11:19:25.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T11:19:25.605Z"
             },
             {
               "$type": "Document",
@@ -238,8 +232,7 @@
               "RelativeToolTip": "AlbumsFormulary\\Albums.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAkwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T13:49:26.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T13:49:26.9Z"
             },
             {
               "$type": "Document",
@@ -251,8 +244,7 @@
               "RelativeToolTip": "AlbumsFormulary\\AlbumsCRUD.Designer.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAswDwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T08:19:54.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T08:19:54.548Z"
             },
             {
               "$type": "Document",
@@ -264,8 +256,7 @@
               "RelativeToolTip": "AlbumsFormulary\\Albums.Designer.cs",
               "ViewState": "AQIAAEoAAAAAAAAAAAAswFoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T11:20:45.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T11:20:45.444Z"
             }
           ]
         }
