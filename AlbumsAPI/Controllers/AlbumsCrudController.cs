@@ -21,7 +21,7 @@ namespace AlbumsAPI.Controllers
             _logger = logger;
             _albumsService = albumsService;
         }
-        [Route("get_photo_by_id")]
+        [Route("get_album_by_id")]
         [HttpGet]
         public async Task<IActionResult> GetByIdAsync(int id)
         {

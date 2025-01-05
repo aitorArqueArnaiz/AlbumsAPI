@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AlbumsFormulary
 {
-    public partial class AlbumPhotos : Form
+    public partial class PhotosCRUD : Form
     {
-        public AlbumPhotos()
+        public PhotosCRUD()
         {
             InitializeComponent();
         }

@@ -19,21 +19,25 @@ namespace AlbumsFormulary
                 var albumTitleFilter = titleAlbumFiltertextBox.Text;
                 var albumsJson = await GetStringAsync(baseUrl + $"Albums/get_album_by_title?title={albumTitleFilter}");
                 var album = JsonConvert.DeserializeObject<IEnumerable<Album>>(albumsJson);
+
                 var photos = await GetStringAsync(baseUrl + $"Photos/get_photos_by_album?album={album.LastOrDefault().Id}");
                 var albumPhotos = JsonConvert.DeserializeObject<IEnumerable<AlbumPhoto>>(photos);
 
-                foreach (var currentPhoto in albumPhotos)
+                if (albumPhotos != null && albumPhotos.Any())
                 {
-                    var image = DownloadImage(currentPhoto.Url);
-                    PictureBox picture = new PictureBox
+                    foreach (var currentPhoto in albumPhotos)
                     {
-                        Name = "pictureBox",
-                        Size = new Size(100, 50),
-                        Location = new Point(14, 17),
-                        SizeMode = PictureBoxSizeMode.CenterImage,
-                        Image = image,
-                    };
-                    panel1.Controls.Add(picture);
+                        var image = DownloadImage(currentPhoto.Url);
+                        PictureBox picture = new PictureBox
+                        {
+                            Name = "pictureBox",
+                            Size = new Size(100, 50),
+                            Location = new Point(14, 17),
+                            SizeMode = PictureBoxSizeMode.CenterImage,
+                            Image = image,
+                        };
+                        panelPhotosImages.Controls.Add(picture);
+                    }
                 }
             }
             catch (Exception ex)
@@ -44,7 +48,7 @@ namespace AlbumsFormulary
 
         private void Albums_Load(object sender, EventArgs e)
         {
-            var photosFormulary = new AlbumPhotos();
+            var photosFormulary = new AlbumsCRUD();
         }
 
         private async Task<string> GetStringAsync(string url)
@@ -64,6 +68,18 @@ namespace AlbumsFormulary
                     return Image.FromStream(stream);
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var albums = new AlbumsCRUD();
+            albums.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var photos = new PhotosCRUD();
+            photos.ShowDialog();
         }
     }
 }
