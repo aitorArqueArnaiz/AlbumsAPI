@@ -8,13 +8,13 @@ namespace AlbumsAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AlbumsCrudeController : ControllerBase
+    public class AlbumsCrudController : ControllerBase
     {
 
         private readonly ILogger<AlbumsController> _logger;
         private readonly IAlbumsService _albumsService;
 
-        public AlbumsCrudeController(
+        public AlbumsCrudController(
             ILogger<AlbumsController> logger,
             IAlbumsService albumsService)
         {

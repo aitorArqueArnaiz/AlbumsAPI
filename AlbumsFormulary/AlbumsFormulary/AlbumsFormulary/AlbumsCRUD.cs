@@ -31,8 +31,8 @@ namespace AlbumsFormulary
 
         private async void button2_Click_1(object sender, EventArgs e)
         {
-            var id = int.Parse(UpdateAlbumTitleTextBox.Text);
-            var userId = int.Parse(UpdateAlbumTitleTextBox.Text);
+            var id = int.Parse(UpdateAlbumIdTextBox.Text);
+            var userId = int.Parse(UpdateUserIdTextBox.Text);
             var title = UpdateAlbumTitleTextBox.Text;
 
             using (var httpClient = new HttpClient())
@@ -52,7 +52,7 @@ namespace AlbumsFormulary
             var id = int.Parse(DeleteAlbumTextBox.Text);
             using (var httpClient = new HttpClient())
             {
-                await httpClient.DeleteAsync($"https://localhost:44374/AlbumsCrude/Update_album_by_id?id={id}");
+                await httpClient.DeleteAsync($"https://localhost:44374/AlbumsCrude/update_album_by_id?id={id}");
             }
         }
 

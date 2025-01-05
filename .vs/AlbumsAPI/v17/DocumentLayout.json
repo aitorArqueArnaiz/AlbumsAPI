@@ -3,23 +3,23 @@
   "WorkspaceRootPath": "C:\\GIT\\AlbumsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|C:\\GIT\\AlbumsAPI\\albumsapi\\controllers\\albumscrudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|c:\\git\\albumsapi\\albumsapi\\controllers\\albumscrudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|solutionrelative:albumsapi\\controllers\\albumscrudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|C:\\GIT\\AlbumsAPI\\albumsapi\\controllers\\photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|solutionrelative:albumsapi\\controllers\\photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|C:\\GIT\\AlbumsAPI\\albumsapi\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|solutionrelative:albumsapi\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|C:\\GIT\\AlbumsAPI\\albumsapi\\controllers\\photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21037843-3967-4986-95E4-67C34EA70985}|AlbumsAPI\\AlbumsAPI.csproj|solutionrelative:albumsapi\\controllers\\photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|C:\\GIT\\AlbumsAPI\\albums.infrastucture\\repository\\albumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94453BB9-23E4-4B23-ACF9-591D8CC125F8}|Albums.Infrastucture\\Albums.Infrastucture.csproj|solutionrelative:albums.infrastucture\\repository\\albumsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F3750B5-4851-4087-895C-6CCDD67FF45D}|Albums.Business\\Albums.Business.csproj|c:\\git\\albumsapi\\albums.business\\services\\albumsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F3750B5-4851-4087-895C-6CCDD67FF45D}|Albums.Business\\Albums.Business.csproj|C:\\GIT\\AlbumsAPI\\albums.business\\services\\albumsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F3750B5-4851-4087-895C-6CCDD67FF45D}|Albums.Business\\Albums.Business.csproj|solutionrelative:albums.business\\services\\albumsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -138,8 +138,7 @@
               "RelativeToolTip": "Albums.Infrastucture\\Repository\\AlbumsRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAuwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T10:45:06.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T10:45:06.374Z"
             },
             {
               "$type": "Document",
@@ -155,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AlbumsController.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Controllers\\AlbumsController.cs",
               "RelativeDocumentMoniker": "AlbumsAPI\\Controllers\\AlbumsController.cs",
@@ -176,8 +175,7 @@
               "RelativeToolTip": "Albums.Business\\Services\\AlbumsService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T12:07:47.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:07:47.848Z"
             },
             {
               "$type": "Document",
@@ -189,12 +187,11 @@
               "RelativeToolTip": "AlbumsAPI\\DTOs\\CreateAlbumRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T14:36:27.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T14:36:27.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PhotosController.cs",
               "DocumentMoniker": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Controllers\\PhotosController.cs",
               "RelativeDocumentMoniker": "AlbumsAPI\\Controllers\\PhotosController.cs",
@@ -202,8 +199,7 @@
               "RelativeToolTip": "AlbumsAPI\\Controllers\\PhotosController.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwBgAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:02:56.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:02:56.222Z"
             },
             {
               "$type": "Document",
@@ -213,7 +209,7 @@
               "RelativeDocumentMoniker": "AlbumsAPI\\Controllers\\AlbumsCrudController.cs",
               "ToolTip": "C:\\GIT\\AlbumsAPI\\AlbumsAPI\\Controllers\\AlbumsCrudController.cs",
               "RelativeToolTip": "AlbumsAPI\\Controllers\\AlbumsCrudController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAABcAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T10:46:08.169Z",
               "EditorCaption": ""
