@@ -13,6 +13,7 @@ namespace AlbumsFormulary
 
         private async void button1_Click(object sender, EventArgs e)
         {
+
             try
             {
                 var albumTitleFilter = titleAlbumFiltertextBox.Text;
@@ -20,10 +21,19 @@ namespace AlbumsFormulary
                 var album = JsonConvert.DeserializeObject<IEnumerable<Album>>(albumsJson);
                 var photos = await GetStringAsync(baseUrl + $"Photos/get_photos_by_album?album={album.LastOrDefault().Id}");
                 var albumPhotos = JsonConvert.DeserializeObject<IEnumerable<AlbumPhoto>>(photos);
-                foreach (var photo in albumPhotos)
+
+                foreach (var currentPhoto in albumPhotos)
                 {
-                    var image = DownloadImage(photo.Url);
-                    photosPanel.Image = image;
+                    var image = DownloadImage(currentPhoto.Url);
+                    PictureBox picture = new PictureBox
+                    {
+                        Name = "pictureBox",
+                        Size = new Size(100, 50),
+                        Location = new Point(14, 17),
+                        SizeMode = PictureBoxSizeMode.CenterImage,
+                        Image = image,
+                    };
+                    panel1.Controls.Add(picture);
                 }
             }
             catch (Exception ex)
@@ -34,7 +44,6 @@ namespace AlbumsFormulary
 
         private void Albums_Load(object sender, EventArgs e)
         {
-            photosPanel = new PictureBox();
             var photosFormulary = new AlbumPhotos();
         }
 
