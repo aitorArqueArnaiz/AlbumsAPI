@@ -33,7 +33,7 @@ namespace AlbumsFormulary
 
                 using (var httpClient = new HttpClient())
                 {
-                    await httpClient.PostAsJsonAsync("https://localhost:44374/AlbumsCrude/create_new_photo", new CreatePhotoRequest()
+                    await httpClient.PostAsJsonAsync("https://localhost:44374/PhotosCrud/create_new_photo", new CreatePhotoRequest()
                     {
                         Id = id,
                         AlbumId = int.Parse(albumId),
@@ -61,7 +61,7 @@ namespace AlbumsFormulary
 
                 using (var httpClient = new HttpClient())
                 {
-                    await httpClient.PatchAsJsonAsync("https://localhost:44374/AlbumsCrude/update_by_id", new UpdatePhotoRequest()
+                    await httpClient.PatchAsJsonAsync("https://localhost:44374/PhotosCrud/update_by_id", new UpdatePhotoRequest()
                     {
                         Id = id,
                         AlbumId = int.Parse(albumId),
@@ -84,7 +84,7 @@ namespace AlbumsFormulary
                 var id = int.Parse(DeletePhotoIdTextBox.Text);
                 using (var httpClient = new HttpClient())
                 {
-                    await httpClient.DeleteAsync($"https://localhost:44374/AlbumsCrude/delete_by_id?id={id}");
+                    await httpClient.DeleteAsync($"https://localhost:44374/PhotosCrud/delete_by_id?id={id}");
                 }
             }
             catch (Exception ex)
@@ -98,7 +98,7 @@ namespace AlbumsFormulary
             try
             {
                 var id = GetPhotoIdTextBox.Text;
-                var albumsJson = await GetStringAsync($"https://localhost:44374/get_by_id?id={id}");
+                var albumsJson = await GetStringAsync($"https://localhost:44374/PhotosCrud/get_by_id?id={id}");
                 var photos = JsonConvert.DeserializeObject<IEnumerable<Album>>(albumsJson);
             }
             catch (Exception ex)

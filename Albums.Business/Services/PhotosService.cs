@@ -70,11 +70,19 @@ namespace Albums.Business.Services
 
         public async Task<bool> ValidatePhotoExistInAlbum(int id, int albumId)
         {
-            var result = this.GetPhotoByIdAsync(id);
-            if (result.AlbumId == albumId)
-                return true;
+            try
+            {
+                var result = this.GetPhotoByIdAsync(id);
+                if (result.AlbumId == albumId)
+                    return true;
 
-            return false;
+                return false;
+            }
+            catch (Exception ex) 
+            {
+                return false;
+            }
+
         }
 
         private Photo ConvertStringToPhoto(string photo)

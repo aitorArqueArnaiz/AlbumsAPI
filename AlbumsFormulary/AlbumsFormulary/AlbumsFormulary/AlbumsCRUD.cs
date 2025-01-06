@@ -1,4 +1,5 @@
-﻿using AlbumsFormulary.DataStructures;
+﻿using AlbumsAPI.DTOs;
+using AlbumsFormulary.DataStructures;
 using AlbumsFormulary.Requests;
 using Newtonsoft.Json;
 using System.Net.Http.Json;
@@ -22,7 +23,7 @@ namespace AlbumsFormulary
 
                 using (var httpClient = new HttpClient())
                 {
-                    await httpClient.PostAsJsonAsync("https://localhost:44374/AlbumsCrude/create_new_albums", new CreateAlbumRequest()
+                    await httpClient.PostAsJsonAsync("https://localhost:44374/AlbumsCrud/create_new_albums", new CreateAlbumRequest()
                     {
                         Id = id,
                         UserId = userId,
@@ -46,7 +47,7 @@ namespace AlbumsFormulary
 
                 using (var httpClient = new HttpClient())
                 {
-                    await httpClient.PatchAsJsonAsync("https://localhost:44374/AlbumsCrude/Update_album_by_id", new UpdateAlbumRequest()
+                    await httpClient.PatchAsJsonAsync("https://localhost:44374/AlbumsCrud/Update_album_by_id", new UpdateAlbumRequest()
                     {
                         Id = id,
                         UserId = userId,
@@ -68,7 +69,7 @@ namespace AlbumsFormulary
                 var id = int.Parse(DeleteAlbumTextBox.Text);
                 using (var httpClient = new HttpClient())
                 {
-                    await httpClient.DeleteAsync($"https://localhost:44374/AlbumsCrude/update_album_by_id?id={id}");
+                    await httpClient.DeleteAsync($"https://localhost:44374/AlbumsCrud/update_album_by_id?id={id}");
                 }
             }
             catch (Exception ex)
@@ -82,7 +83,7 @@ namespace AlbumsFormulary
             try
             {
                 var id = AlbumTextBox.Text;
-                var albumsJson = await GetStringAsync($"https://localhost:44374/get_album_by_id?id={id}");
+                var albumsJson = await GetStringAsync($"https://localhost:44374/AlbumsCrud/get_album_by_id?id={id}");
                 // Here I use Newtonsoft.Json to deserialize JSON string to User object
                 var albums = JsonConvert.DeserializeObject<IEnumerable<Album>>(albumsJson);
             }
