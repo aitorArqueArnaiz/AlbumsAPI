@@ -1,5 +1,5 @@
-﻿using AlbumsFormulary.DataStructures;
-using AlbumsFormulary.Requests;
+﻿using AlbumsAPI.DTOs;
+using AlbumsFormulary.DataStructures;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

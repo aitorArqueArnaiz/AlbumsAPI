@@ -1,4 +1,4 @@
-﻿namespace AlbumsFormulary.Requests
+﻿namespace AlbumsAPI.DTOs
 {
     public class UpdatePhotoRequest
     {
