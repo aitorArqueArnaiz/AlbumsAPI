@@ -68,7 +68,7 @@ namespace AlbumsFormulary
                 var id = int.Parse(DeleteAlbumTextBox.Text);
                 using (var httpClient = new HttpClient())
                 {
-                    await httpClient.DeleteAsync($"https://localhost:44374/AlbumsCrud/update_album_by_id?id={id}");
+                    await httpClient.DeleteAsync($"https://localhost:44374/AlbumsCrud/delete_by_id?id={id}");
                 }
             }
             catch (Exception ex)
