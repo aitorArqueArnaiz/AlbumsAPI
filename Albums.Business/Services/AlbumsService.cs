@@ -89,6 +89,22 @@ namespace Albums.Business.Services
             await _albumsDbRepository.AddAsync(updateSqlQuery);
         }
 
+        public async Task<bool> ValidateAlbumExistsAsync(int id)
+        {
+            try
+            {
+                var result = this.GetAlbumByIdAsync(id);
+                if (result != null)
+                    return true;
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         public async Task<bool> ValidateAlbumUserExistsAsync(int id, int userId)
         {
             try

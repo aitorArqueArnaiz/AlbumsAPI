@@ -68,6 +68,22 @@ namespace Albums.Business.Services
             await _photosDbReposiory.AddAsync(updateSqlQuery);
         }
 
+        public async Task<bool> ValidatePhotoExist(int id)
+        {
+            try
+            {
+                var result = this.GetPhotoByIdAsync(id);
+                if (result != null)
+                    return true;
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         public async Task<bool> ValidatePhotoExistInAlbum(int id, int albumId)
         {
             try

@@ -23,6 +23,7 @@ namespace Albums.Domain.Contracts
         /// <param name="userId">the user id.</param>
         /// <returns></returns>
         Task<bool> ValidateAlbumUserExistsAsync(int id, int userId);
+        Task<bool> ValidateAlbumExistsAsync(int id);
         /// <summary>
         /// Method that creates new album.
         /// </summary>

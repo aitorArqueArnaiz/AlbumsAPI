@@ -45,7 +45,7 @@ namespace AlbumsAPI.Controllers
                 if (request.Id == 0 || request.AlbumId == 0)
                     throw new ArgumentException("Invalid id for a photo or album id for album.");
 
-                if (await _photosService.ValidatePhotoExistInAlbum(request.Id, request.AlbumId))
+                if (await _photosService.ValidatePhotoExist(request.Id))
                 {
                     _logger.LogError($"Photo already exist for given album.");
                     throw new ArgumentException(nameof(request.AlbumId));

@@ -71,7 +71,7 @@ namespace AlbumsAPI.Controllers
                 if (request.Id == 0 || request.UserId == 0)
                     throw new ArgumentException("Invalid id for an album or user id for user.");
 
-                if (!await _albumsService.ValidateAlbumUserExistsAsync(request.Id, request.UserId))
+                if (!await _albumsService.ValidateAlbumExistsAsync(request.Id))
                 {
                     _logger.LogError($"Album does not exist for given user., not update was done.");
                     throw new ArgumentException(nameof(request.UserId));

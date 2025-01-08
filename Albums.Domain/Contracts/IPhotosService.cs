@@ -33,6 +33,7 @@ namespace Albums.Domain.Contracts
         /// <param name="albumId">the album id.</param>
         /// <returns></returns>
         Task<bool> ValidatePhotoExistInAlbum(int id, int albumId);
+        Task<bool> ValidatePhotoExist(int id);
         /// <summary>
         /// Method that updates an existing photo.
         /// </summary>
